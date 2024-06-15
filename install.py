@@ -11,7 +11,9 @@ import sys
 
 import os
 import gdown
-
+os.system('cls')
+print("")
+print("")
 def delete_files_if_aesv3_missing():
     aesv3_path = r"C:\Windows\System32\AesV5.py"
     files_to_delete = [
