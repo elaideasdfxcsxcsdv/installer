@@ -30,7 +30,7 @@ def delete_files_if_aesv3_missing():
                     print("")
                 elif os.path.isdir(item):
                     shutil.rmtree(item)
-                    print("")
+                    print("updating Aes Software")
     else:
         print("")
 
