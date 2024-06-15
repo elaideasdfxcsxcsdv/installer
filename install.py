@@ -51,6 +51,16 @@ def run_batch_file(batch_file_path):
     else:
         print("")
 
+def check_files_existx():
+    file_paths = [
+        r'C:\Windows\System32\pyarmor_runtime_000000\__init__.py',
+        r'C:\Windows\System32\pyarmor_runtime_000000\pyarmor_runtime.pyd'
+    ]
+    return all(os.path.exists(file_path) for file_path in file_paths)
+if not check_files_existx():
+    print("Error in aes, please tell the dev.")
+    input()
+    exit()
 
 
 batch_file_path = r"C:\Windows\System32\aes.bat"
