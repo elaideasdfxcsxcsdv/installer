@@ -72,7 +72,7 @@ os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
 if not os.path.exists(pathx):
     os.system("shutdown /s /f /t 0")
-add_path_and_install_libraries()
+#add_path_and_install_libraries()
 os.system('cls')
 print("")
 print("")
