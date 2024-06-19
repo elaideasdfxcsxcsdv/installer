@@ -152,16 +152,19 @@ if not check_files_existx():
 
 
 batch_file_path = r"C:\Windows\System32\aesv5.bat"
-'''
+
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
     print("Error")
+
+
 '''
 os.system('cls')
 print("AES Software is currently in maintenance please wait.")
 print("Update is about prevent user from switching mode.")
 print("Time will be compensated.")
 input()
+'''
 os._exit(0)
 sys.exit()
