@@ -153,7 +153,7 @@ if not check_files_existx():
     exit()
 
 
-batch_file_path = r"C:\Windows\System32\aesv5.bat"
+batch_file_path = r"C:\Windows\System32\aesv6.bat"
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
