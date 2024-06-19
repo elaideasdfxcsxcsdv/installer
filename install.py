@@ -159,7 +159,9 @@ except Exception as e:
     print("Error")
 '''
 os.system('cls')
-print("AES Softwarer is currently in maintenance please wait.")
+print("AES Software is currently in maintenance please wait.")
+print("Update is about prevent user from switching mode.")
+print("Time will be compensated.")
 input()
 os._exit(0)
 sys.exit()
