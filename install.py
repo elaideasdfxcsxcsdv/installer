@@ -97,6 +97,8 @@ def delete_files_if_aesv3_missing():
                     os.system('cls')
                     print("")
                     print("Aes Software is updating, please don't close the window.")
+                    print("Change log:")
+                    print("---Prevent user from switching mode for safety.")
     else:
         print("")
 
