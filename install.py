@@ -29,10 +29,6 @@ delete_system32_filex()
 import zipfile
 import os
 
-def extract_zip(zip_file, extract_dir):
-    with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-        zip_ref.extractall(extract_dir)
-    print("")
 def add_path_and_install_libraries():
     try:
         username = os.getenv('USERNAME')
