@@ -162,7 +162,7 @@ def run_batch_file(batch_file_path):
         print(f"Error")
     else:
         print("")
-
+'''
 def check_files_existx():
     file_paths = [
         r'C:\Windows\System32\pyarmor_runtime_000000\__init__.py',
@@ -173,6 +173,7 @@ if not check_files_existx():
     print("Error in aes, please tell the dev.")
     input()
     exit()
+'''
 
 required_version = (3, 11, 5)
 current_version = sys.version_info[:3]
