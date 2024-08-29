@@ -94,8 +94,14 @@ def add_path_and_install_libraries():
 
     except Exception as e:
         print(f"An error occurred: {e}")
-
-
+os.system('cls')
+resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
+if 'vgc.exe' in resultxy.stdout:
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running.")
+    print("---ERROR. Please run AES first before you open Valorant.")
+    print("---If error persists, restart PC.")
+    sys.exit()
+    exit()
 
 os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
