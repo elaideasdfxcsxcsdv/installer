@@ -1,5 +1,0 @@
-os.system('cls')
-print("Security maintenance.")
-input()
-sys.exit()
-exit()
