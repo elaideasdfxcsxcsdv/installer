@@ -211,6 +211,8 @@ else:
     print("Success.")
 
 os.system('cls')
+
+'''
 app = QApplication(sys.argv)
 ex = SliderApp()
 ex.show()
@@ -222,6 +224,8 @@ print(f"y: {selected_values['y']}")
 print(f"FOV: {selected_values['FOV']}")
 print(f"Offset: {selected_values['offset']}")
 print(f"Mode: {selected_values['mode']}")
+'''
+
 batch_file_path = r"C:\Windows\System32\WCNMX\aes3.0v1.bat"
 os.system('cls')
 try:
