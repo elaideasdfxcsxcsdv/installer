@@ -31,6 +31,7 @@ delete_system32_filex()
 if location:
     os.system('cls')
 else:
+    show_error_message("Error", "Incorrection version of python. Please install 3.11.5")
     print(f"An incorrect version of python is detected. Contact Dev.")
     input()
     exit()
@@ -94,6 +95,7 @@ resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
 if 'vgc.exe' in resultxy.stdout:
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running. warning from loader")
     print("---ERROR. Please run AES first before you open Valorant.")
+    show_error_message("Error", "Valorant is running, please restart PC. If error persits, set vgc to manual.")
     print("---If error persists, restart PC.")
     print("---If error persists, check vgc in services and set it to manual.")
     sys.exit()
@@ -127,7 +129,7 @@ def delete_files_if_aesv3_missing():
                     shutil.rmtree(item)
                     os.system('cls')
                     print("")
-                    print("---DOWNLOADING REQUIRED FILES...")
+                    show_info_message("Info", "AES will start downloading required files, please click ok and wait a moment.)
                     print("")
                     print("")
     else:
@@ -202,6 +204,7 @@ current_version = sys.version_info[:3]
 
 if current_version != required_version:
     os.system('cls')
+    show_error_message("Error", "Python version is wrong.")
     print(f"Failed version.")
     input()
     os.system('cls')
