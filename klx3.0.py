@@ -13,7 +13,7 @@ import os
 import gdown
 
 
-show_info_message("AES REMINDER", "A REMINDER TO OPEN CHEAT FIRST BEFORE VALORANT. CLICK OK TO CONTINUE.")
+
 os.system('cls')
 '''
 def delete_system32_filex():
@@ -239,7 +239,7 @@ else:
     print("Success.")
 
 os.system('cls')
-
+show_info_message("AES REMINDER", "A REMINDER TO OPEN CHEAT FIRST BEFORE VALORANT. CLICK OK TO CONTINUE.")
 app = QApplication(sys.argv)
 ex = SliderApp()
 ex.show()
