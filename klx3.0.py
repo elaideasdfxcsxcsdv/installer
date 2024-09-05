@@ -77,6 +77,7 @@ def check_user_pass(username_input):
             sys.exit()
             exit()
     else:
+        send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "run with expired key.")
         show_error_message("Error", "Your key is not registered yet on the server. Please contact dev.")
         sys.exit()
 
