@@ -30,7 +30,11 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
-
+filenamexmyname = os.path.basename(__file__)
+if filenamexmyname != "AES3.0V3.exe":
+    os.system('cls')
+    show_error_message("Error", "ERROR, LOADER is not updated.")
+    sys.exit()
 if location:
     os.system('cls')
 else:
