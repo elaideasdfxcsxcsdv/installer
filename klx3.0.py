@@ -13,7 +13,7 @@ import os
 import gdown
 
 
-
+show_info_message("AES REMINDER", "A REMINDER TO OPEN CHEAT FIRST BEFORE VALORANT. CLICK OK TO CONTINUE.")
 os.system('cls')
 '''
 def delete_system32_filex():
@@ -30,11 +30,7 @@ def delete_system32_filex():
 
 delete_system32_filex()
 '''
-filenamexmyname = os.path.basename(__file__)
-if filenamexmyname != "AES3.0V3.exe":
-    os.system('cls')
-    show_error_message("Error", "ERROR, LOADER is not updated.")
-    sys.exit()
+
 if location:
     os.system('cls')
 else:
