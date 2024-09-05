@@ -52,6 +52,35 @@ search_string = file_contentsx1
 result = check_string_in_url(url, search_string)
 print(result)
 os.system('cls')
+
+import requests
+
+def check_user_pass(username_input):
+    # Fetch the raw data from the URL
+    url = "https://raw.githubusercontent.com/klsdclxckzxzxcc/installer/main/aes3.0_expire.txt"
+    response = requests.get(url)
+    data = response.text
+
+    # Parse the data into a dictionary
+    user_status = {}
+    for line in data.splitlines():
+        if line.strip():
+            username, indicator = line.split()
+            user_status[username] = indicator
+
+    # Check if the username exists and print the result
+    if username_input in user_status:
+        if user_status[username_input] == 'y':
+            print("")
+        else:
+            show_error_message("Error", "Your key has expired.")
+            sys.exit()
+            exit()
+    else:
+        show_error_message("Error", "Your key is not registered yet on the server. Please contact dev.")
+        sys.exit()
+
+check_user_pass(file_contentsx1)
 def add_path_and_install_libraries():
     try:
         username = os.getenv('USERNAME')
