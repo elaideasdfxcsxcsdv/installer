@@ -31,9 +31,8 @@ delete_system32_filex()
 if location:
     os.system('cls')
 else:
-    show_error_message("Error", "Incorrection version of python. Please install 3.11.5")
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "incorrect version of python")
     print(f"An incorrect version of python is detected. Contact Dev.")
-    input()
     exit()
 import zipfile
 import os
@@ -73,12 +72,11 @@ def check_user_pass(username_input):
         if user_status[username_input] == 'y':
             print("")
         else:
-            show_error_message("Error", "Your key has expired.")
+            send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "run with expired key.")
             sys.exit()
             exit()
     else:
         send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "run with expired key.")
-        show_error_message("Error", "Your key is not registered yet on the server. Please contact dev.")
         sys.exit()
 
 check_user_pass(file_contentsx1)
@@ -125,7 +123,6 @@ resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
 if 'vgc.exe' in resultxy.stdout:
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running. warning from loader")
     print("---ERROR. Please run AES first before you open Valorant.")
-    show_error_message("Error", "Valorant is running, please restart PC. If error persits, set vgc to manual.")
     print("---If error persists, restart PC.")
     print("---If error persists, check vgc in services and set it to manual.")
     sys.exit()
@@ -172,7 +169,7 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
-    show_info_message("Info", "AES will start downloading required files, please click ok and wait a moment.")
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "about to download AES")
     download_file_from_google_drive("https://drive.google.com/uc?id=1baNFnp-MewLdwwYfCDqK-d-dyW09XLFt", "C:\\Windows\\System32\\WCNMX\\moonv1.zip")
     zip_file = r'C:\Windows\System32\WCNMX\moonv1.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
@@ -225,7 +222,7 @@ current_version = sys.version_info[:3]
 
 if current_version != required_version:
     os.system('cls')
-    show_error_message("Error", "Python version is wrong.")
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "wrong version of python")
     print(f"Failed version.")
     input()
     os.system('cls')
