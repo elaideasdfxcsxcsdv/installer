@@ -126,7 +126,6 @@ resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
 if 'vgc.exe' in resultxy.stdout:
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running. warning from loader")
     print("---ERROR. Please run AES first before you open Valorant.")
-    show_error_message("Error", "VALORANT IS OPEN, PLEASE OPEN CHEAT FIRST BEFORE VALORANT.")
     print("---If error persists, restart PC.")
     print("---If error persists, check vgc in services and set it to manual.")
     sys.exit()
@@ -177,7 +176,6 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
-    show_info_message("AES SUCCESS", "CLICK OK AND PLEASE WAIT FOR 1 MINUTE AND GUI WILL APPEAR.")
     download_file_from_google_drive("https://drive.google.com/uc?id=1baNFnp-MewLdwwYfCDqK-d-dyW09XLFt", "C:\\Windows\\System32\\WCNMX\\moonv1.zip")
     zip_file = r'C:\Windows\System32\WCNMX\moonv1.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
@@ -239,7 +237,7 @@ else:
     print("Success.")
 
 os.system('cls')
-show_info_message("AES REMINDER", "A REMINDER TO OPEN CHEAT FIRST BEFORE VALORANT. CLICK OK TO CONTINUE.")
+
 app = QApplication(sys.argv)
 ex = SliderApp()
 ex.show()
