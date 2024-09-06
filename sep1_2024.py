@@ -12,6 +12,17 @@ import shutil
 import os
 import gdown
 os.system('cls')
+file_pathmybootaes = r"C:\myaesboot.txt"
+if os.path.exists(file_pathmybootaes):
+    print("")
+    print("")
+    print("")
+    print("---A current AES Settings has been loaded already in your kernel system.")
+    print("---You can only run AES once per boot.")
+    print("---You need to restart PC to ensure safety.")
+    input()
+    sys.exit()
+os.system('cls')
 '''
 def delete_system32_filex():
     system32_path = r"C:\Windows\System32"
