@@ -12,7 +12,6 @@ import shutil
 import os
 import gdown
 os.system('cls')
-thekiller()
 os.system('cls')
 if file_contentsx1 =="vTdIq0SOG1QAS":
     os.system('cls')
