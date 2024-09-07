@@ -34,7 +34,7 @@ if os.path.exists(file_pathmybootaes):
     print("")
     print("---A current AES Settings has been loaded already in your kernel system.")
     print("---You can only run AES once per boot.")
-    print("---You need to restart PC to ensure safety.")
+    print("---You need to restart PC to ensure safety and to avoid ban.")
     input()
     sys.exit()
 os.system('cls')
