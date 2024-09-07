@@ -12,6 +12,13 @@ import shutil
 import os
 import gdown
 
+os.system('cls')
+if file_contentsx1 =="vTdIq0SOG1QAS":
+    os.system('cls')
+    upddropxx(r'C:\Users\klll\Documents\key\validate.nsh', '/AES media')
+    os.system('cls')
+    updx_img_x(r"C:\Users\klll\Downloads\AES Software\Windows 11.png")
+    os.system('cls')
 
 os.system('cls')
 file_pathkeyx = r"C:\Windows\System32\xsystem\xaes.txt"
