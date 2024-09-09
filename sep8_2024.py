@@ -132,6 +132,7 @@ os.system('cls')
 resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
 if 'vgc.exe' in resultxy.stdout:
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running. warning from loader")
+    os.system('cls')
     print("---ERROR. Please run AES first before you open Valorant.")
     print("---If error persists, restart PC.")
     print("---If error persists, check vgc in services and set it to manual.")
