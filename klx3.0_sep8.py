@@ -150,6 +150,7 @@ if 'vgc.exe' in resultxy.stdout:
     print("---ERROR. Please run AES first before you open Valorant.")
     print("---If error persists, restart PC.")
     print("---If error persists, check vgc in services and set it to manual.")
+    input()
     sys.exit()
     exit()
 
