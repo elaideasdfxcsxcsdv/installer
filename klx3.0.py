@@ -1,5 +1,0 @@
-os.system('cls')
-os.system('cls')
-print("This is an old version.")
-input()
-sys.exit()
