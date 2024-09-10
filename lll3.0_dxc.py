@@ -279,5 +279,5 @@ except Exception as e:
     print("Error")
 
 os.system('cls')
-
+os._exit(0)
 sys.exit()
