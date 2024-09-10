@@ -186,7 +186,6 @@ def delete_files_if_aesv3_missing():
                     shutil.rmtree(item)
                     os.system('cls')
                     print("")
-                    print("---Changelog: Added logs")
                     print("")
                     print("")
     else:
@@ -199,6 +198,10 @@ def download_file_from_google_drive(url, output_path):
         gdown.download(url, output=output_path, quiet=True)
 
 if not os.path.exists("C:\\Windows\\System32\\IMEX\\pyarmor_runtime_000000"):
+    os.system('cls')
+    print("Please wait a moment.")
+    subprocess.check_call(["py", "-m", "pip", "install", "dxcam"])
+    os.system('cls')
     print("--downloading required libraries, please wait a moment...")
     download_file_from_google_drive("https://drive.google.com/uc?id=17sWRfzP4GUiSdMbwH0Z-56Au-jvbGfDV", "C:\\Windows\\System32\\IMEX\\kldx.zip")
     zip_file = r'C:\Windows\System32\IMEX\kldx.zip'
