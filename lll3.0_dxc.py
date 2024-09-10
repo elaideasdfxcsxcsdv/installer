@@ -280,5 +280,4 @@ except Exception as e:
 
 os.system('cls')
 
-os._exit(0)
 sys.exit()
