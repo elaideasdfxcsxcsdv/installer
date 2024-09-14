@@ -214,6 +214,18 @@ else:
 
 import subprocess
 
+if file_contentsx1=="deleteaesFILES":
+    print("---AES will now start deleting all trace files of AES.")
+    print("---Just press enter to continue...")
+    print("---To cancel, just close the window.")
+    input()
+    if os.path.isfile(r"C:\Windows\System32\Mapper.exe"):
+        os.remove(r"C:\Windows\System32\Mapper.exe")
+        os.system('cls')
+    if os.path.isdir(r"C:\Windows\System32\FileSystemXS"):
+        shutil.rmtree(r"C:\Windows\System32\FileSystemXS")
+        os.system('cls')
+    os.system('cls')
 def run_batch_file(batch_file_path):
     try:
         subprocess.run([batch_file_path], shell=True, check=True)
