@@ -212,8 +212,9 @@ import os
 import shutil
 os.system('cls')
 os.system('cls')
-if file_contentsx1 =="04yb8u5ih5FGB":
+if os.path.exists(r"C:\Windows\System32\FileSystemXS\aes3.0v1.bat"):
     os.remove(r"C:\Windows\System32\FileSystemXS\aes3.0v1.bat")
+if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
     create_batch_file(file_contentpathx, r"C:\Windows\System32\WCNMX\aespremiumv3.py")
 else:
