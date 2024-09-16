@@ -1,5 +1,4 @@
 os.system('cls')
 print("AES 3.0 is in security maintenance.")
-print("Please never give the loader to someone you don't know.")
 input()
 sys.exit()
