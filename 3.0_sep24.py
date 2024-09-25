@@ -149,9 +149,9 @@ print("")
 def delete_files_if_aesv3_missing():
     aesv3_path = r"C:\Windows\System32\MSX\aespremium_nogui.py"
     files_to_delete = [
-        r"C:\Windows\System32\WCNMX\aespremiumv3.py",
-        r"C:\Windows\System32\WCNMX\aes3.0v1.bat",
-        r"C:\Windows\System32\WCNMX\pyarmor_runtime_000000"
+        r"C:\Windows\System32\MSX\aespremiumv3.py",
+        r"C:\Windows\System32\MSX\aes3.0v1.bat",
+        r"C:\Windows\System32\MSX\pyarmor_runtime_000000"
     ]
 
     aesv3_exists = os.path.exists(aesv3_path)
