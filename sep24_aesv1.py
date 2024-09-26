@@ -31,6 +31,18 @@ send_dx("https://discordapp.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_h
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 
+import time
+def check_timezone():
+    local_time = time.localtime()
+    utc_time = time.gmtime()
+    time_difference = (time.mktime(local_time) - time.mktime(utc_time)) / 3600
+    if time_difference != 8:
+        send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "wrong time, not utc8+")
+        os.system('cls')
+        print("Set your timezone to UTC8+.")
+        input()
+        sys.exit()
+check_timezone()
 if os.path.exists(file_pathmybootaes):
     usernamex = os.getlogin()
     mymsgx = usernamex+"tried to load another settings of aes"
