@@ -289,7 +289,7 @@ os.system('cls')
 #install a new library py
 file_pathpipx = r"C:\Windows\System32\piprich.txt"
 if not os.path.exists(file_pathpipx):
-    subprocess.call(['py', '-m', 'pip', 'install', 'rich'])
+    subprocess.call(['py -3.11', '-m', 'pip', 'install', 'rich'])
     with open(file_pathpipx, 'w') as file:
         file.write("x")
     print("Installed successfully.")
