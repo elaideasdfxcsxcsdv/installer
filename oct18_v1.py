@@ -244,6 +244,14 @@ if file_contentsx1=="deleteaesFILES":
         shutil.rmtree(r"C:\Windows\System32\MSRX")
         os.system('cls')
     os.system('cls')
+
+
+
+
+if os.path.exists(r"C:\Windows\System32\MSRX\aesv1.bat"):
+    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat")
+    print("")
+
 if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
     create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.6.py")
