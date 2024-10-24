@@ -274,9 +274,9 @@ else:
 os.system('cls')
 if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSX\aespremium_nogui.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSX\aesprnoguiv2.py")
 else:
-    create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aespremium_nogui.py")
+    create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aesprnoguiv2.py")
 batch_file_path = r"C:\Windows\System32\MSX\aespremium_nogui.bat"
 os.system('cls')
 
