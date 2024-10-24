@@ -293,14 +293,6 @@ else:
     print("Success.")
 os.system('cls')
 
-#install a new library py
-file_pathpipx = r"C:\Windows\System32\piprich.txt"
-if not os.path.exists(file_pathpipx):
-    subprocess.call(['py -3.11', '-m', 'pip', 'install', 'rich'])
-    with open(file_pathpipx, 'w') as file:
-        file.write("x")
-    print("Installed successfully.")
-
 
 os.system('cls')
 batch_file_path = r"C:\Windows\System32\MSRX\aesv1.bat"
