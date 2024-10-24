@@ -247,11 +247,6 @@ if file_contentsx1=="deleteaesFILES":
 
 
 
-
-if os.path.exists(r"C:\Windows\System32\MSRX\aesv1.bat"):
-    os.remove(r"C:\Windows\System32\MSRX\aesv1.bat")
-    print("")
-
 '''
 if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
