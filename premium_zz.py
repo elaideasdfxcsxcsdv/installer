@@ -273,23 +273,14 @@ else:
 
 os.system('cls')
 def create_batch_file(python_command, script_name):
-    # Define the directory and file name
-    directory = r"C:\Windows\System32\MSRX"
-    filename = "aesv1.bat"
+    directory = r"C:\Windows\System32\MSX"
+    filename = "aespremium_nogui.bat"
     filepath = os.path.join(directory, filename)
-
-    # Check if the batch file already exists
     if not os.path.exists(filepath):
-        # Content of the batch file, with python_command and script_name as parameters
         batch_content = f"@echo off\n{python_command} {script_name} || echo errorwithpath"
-
-        # Create the directory if it doesn't exist
         os.makedirs(directory, exist_ok=True)
-
-        # Write the content to the batch file
         with open(filepath, 'w') as file:
             file.write(batch_content)
-
         print(f"")
     else:
         print("")
