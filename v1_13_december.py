@@ -103,9 +103,6 @@ search_string = file_contentsx1
 result = check_string_in_url(url, search_string)
 print(result)
 os.system('cls')
-
-
-
 def add_path_and_install_libraries():
     try:
         username = os.getenv('USERNAME')
