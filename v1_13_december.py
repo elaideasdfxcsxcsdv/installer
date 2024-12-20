@@ -175,9 +175,11 @@ def check_uptime():
         print("Okay")
     else:
         time_remaining = timedelta(minutes=5) - uptime
+        os.system('cls')
         print("INFO")
-        print("You must not restart your PC and wait for the countdown to finish.")
-
+        print("You must not restart your PC and wait for 5mins.")
+        input()
+        exit()
         while time_remaining.total_seconds() > 0:
             os.system('cls' if os.name == 'nt' else 'clear')
             print("PLEASE WAIT")
