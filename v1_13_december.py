@@ -162,20 +162,16 @@ def check_uptime():
         print("Could not determine boot time.")
         return
 
-    current_time = datetime.datetime.now()
+    current_time = datetime.now()
     uptime = current_time - boot_time
 
     print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
     print("Uptime Duration:", uptime)
 
-    if uptime >= datetime.timedelta(minutes=5):
-        print("good to go")
+    if uptime >= timedelta(minutes=5):
+        print("Okay")
     else:
-        os.system('cls')
-        print("---ERROR")
-        print("---Try again later or in 3-5 minutes.")
-        input()
-        exit()
+        print("Not Okay"
 
 if file_contentsx1=="whTrqtjPmBqYL" or file_contentsx1=="ppYnNtw99XO3G" or file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="gQbdHGLz6Jdf3" or file_contentsx1=="Gsl6v6pcg8NUR" or file_contentsx1=="uSDKdEt8VddC8":
     check_uptime()
