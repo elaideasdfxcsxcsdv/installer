@@ -173,6 +173,7 @@ def check_uptime():
     if uptime >= timedelta(minutes=5):
         print("Okay")
     else:
+        os.system('cls')
         print("ERROR")
         print("Try again later, maybe in 4-5 minutes.")
         input()
