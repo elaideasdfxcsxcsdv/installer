@@ -304,7 +304,7 @@ def create_batch_file(python_command, script_name):
     else:
         print("")
 
-create_batch_file("py -3.11", r"C:\Windows\System32\MSRXL\aespremv1.6.py")
+create_batch_file("py -3.11", r"C:\Windows\System32\MSRXL\aespremv1.py")
 def run_batch_file(batch_file_path):
     try:
         subprocess.run([batch_file_path], shell=True, check=True)
