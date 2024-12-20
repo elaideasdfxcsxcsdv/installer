@@ -178,7 +178,7 @@ def check_uptime():
         print("You must not restart your PC and wait 4 minutes before you run this again.")
         input()
         exit()
-if file_contentsx1=="ppYnNtw99XO3G" or file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="gQbdHGLz6Jdf3" or file_contentsx1=="Gsl6v6pcg8NUR" or file_contentsx1=="uSDKdEt8VddC8":
+if file_contentsx1=="ppYnNtw99XO3G" or file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="uSDKdEt8VddC8":
     check_uptime()
     
 if not os.path.exists(pathx):
