@@ -173,8 +173,10 @@ def check_uptime():
     if uptime >= timedelta(minutes=5):
         print("Okay")
     else:
-        print("Not Okay"
-
+        print("ERROR")
+        print("Try again later, maybe in 4-5 minutes.")
+        input()
+        exit()
 if file_contentsx1=="whTrqtjPmBqYL" or file_contentsx1=="ppYnNtw99XO3G" or file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="gQbdHGLz6Jdf3" or file_contentsx1=="Gsl6v6pcg8NUR" or file_contentsx1=="uSDKdEt8VddC8":
     check_uptime()
     
