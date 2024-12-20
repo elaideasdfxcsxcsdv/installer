@@ -156,6 +156,8 @@ if 'vgc.exe' in resultxy.stdout:
 
 os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
+
+from datetime import datetime, timedelta
 def check_uptime():
     boot_time = get_boot_time()
     if boot_time is None:
