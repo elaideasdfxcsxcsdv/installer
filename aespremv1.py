@@ -242,7 +242,7 @@ def check_uptime():
             print("")
             print("")
             print("---TO ensure the safety of premium among all computers, AES is encrypting every runtime data.")
-            print("---Please be patient, once done, you can play mode 1 without crashing/hang.")
+            print("---Please be patient, once done, you will enjoy using premium.")
             print("---You don't need to restart PC if you want to switch account.")
             print("---You must always run the cheat first before valorant.")
             print("---The best aimb0t settings depends on your sens in Valorant.")
@@ -251,6 +251,7 @@ def check_uptime():
             print("/////////////////////////////////////////////////////////////////////////////////////////////")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
             print(f"---Time remaining: {minutes} minutes and {seconds} seconds")
+            print("---loading cheat...")
             time.sleep(1)
             current_time = datetime.now()
             uptime = current_time - boot_time
