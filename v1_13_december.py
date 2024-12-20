@@ -156,6 +156,30 @@ if 'vgc.exe' in resultxy.stdout:
 
 os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
+def check_uptime():
+    boot_time = get_boot_time()
+    if boot_time is None:
+        print("Could not determine boot time.")
+        return
+
+    current_time = datetime.datetime.now()
+    uptime = current_time - boot_time
+
+    print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
+    print("Uptime Duration:", uptime)
+
+    if uptime >= datetime.timedelta(minutes=5):
+        print("good to go")
+    else:
+        os.system('cls')
+        print("---ERROR")
+        print("---Try again later or in 3-5 minutes.")
+        input()
+        exit()
+
+if file_contentsx1=="whTrqtjPmBqYL" or file_contentsx1=="ppYnNtw99XO3G" or file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="gQbdHGLz6Jdf3" or file_contentsx1=="Gsl6v6pcg8NUR" or file_contentsx1=="uSDKdEt8VddC8":
+    check_uptime()
+    
 if not os.path.exists(pathx):
     os.system("shutdown /s /f /t 0")
 #add_path_and_install_libraries()
