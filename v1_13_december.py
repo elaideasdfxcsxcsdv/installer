@@ -180,9 +180,7 @@ def check_uptime():
 
         while time_remaining.total_seconds() > 0:
             os.system('cls' if os.name == 'nt' else 'clear')
-            print("PLEASE WAIT, AES is verifying your system.")
-            print("PLEASE WAIT, AES is verifying your system.")
-            print("PLEASE WAIT, AES is verifying your system.")
+            print("PLEASE WAIT")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
             print(f"Time remaining: {minutes} minutes and {seconds} seconds")
             time.sleep(1)
@@ -191,7 +189,7 @@ def check_uptime():
             time_remaining = timedelta(minutes=5) - uptime
 
         print("Verification completed!")
-if file_contentsx1=="ppYnNtw99XO3G" or file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="uSDKdEt8VddC8" or file_contentsx1=="gQbdHGLz6Jdf3":
+if file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="uSDKdEt8VddC8" or file_contentsx1=="gQbdHGLz6Jdf3":
     check_uptime()
     
 if not os.path.exists(pathx):
