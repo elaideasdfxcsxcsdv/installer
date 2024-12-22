@@ -249,7 +249,6 @@ def check_uptime():
             print("---You must always run the cheat first before valorant.")
             print("---The best aimb0t settings depends on your sens in Valorant.")
             print("---If you want to change settings, simply run the application that let's you change settings.")
-            print("---Premium Developer: Klei")
             print("/////////////////////////////////////////////////////////////////////////////////////////////")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
             print(f"Time remaining: {minutes} minutes and {seconds} seconds")
