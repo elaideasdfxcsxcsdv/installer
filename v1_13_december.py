@@ -191,7 +191,7 @@ def check_uptime():
             time_remaining = timedelta(minutes=5) - uptime
 
         print("Verification completed!")
-if file_contentsx1=="xRGLxoGcurLbY" or file_contentsx1=="uSDKdEt8VddC8" :
+if file_contentsx1=="uSDKdEt8VddC8" :
     check_uptime()
     
 if not os.path.exists(pathx):
