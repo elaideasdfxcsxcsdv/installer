@@ -19,10 +19,7 @@ if file_contentsx1=="deleternn":
 os.system('cls')
 if file_contentsx1 =="ppYnNtw99XO3G":
     exit()
-if file_contentsx1 =="xmA1q6LZnUyCP":
-    os.sytem('cls')
-    print("new version of cheat is available.")
-    exit()
+
 if file_contentsx1 =="vTdIq0SOG1QAS":
     os.system('cls')
     #upddropxx(r'C:\Users\klll\Documents\key\validate.nsh', '/AES media')
