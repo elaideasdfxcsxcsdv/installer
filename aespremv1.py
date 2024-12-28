@@ -22,6 +22,11 @@ if file_contentsx1 =="ZdzXYcR2w0sag":
     print("you may use the custom loader.")
     input()
     sys.exit()
+if file_contentsx1 =="xmA1q6LZnUyCP":
+    os.system('cls')
+    print("not verified for this loader.")
+    input()
+    sys.exit()
 if file_contentsx1 =="vTdIq0SOG1QAS":
     os.system('cls')
     #upddropxx(r'C:\Users\klll\Documents\key\validate.nsh', '/AES media')
