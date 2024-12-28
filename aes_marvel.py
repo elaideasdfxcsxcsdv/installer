@@ -11,6 +11,22 @@ import sys
 import shutil
 import os
 import gdown
+import os
+
+def delete_aesmarvel_conf():
+    file_path = r"C:\Windows\System32\aesmarvel_conf.txt"
+    try:
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            print(f"File '{file_path}' has been deleted successfully.")
+        else:
+            print(f"File '{file_path}' does not exist.")
+    except PermissionError:
+        print(f"Permission denied: Unable to delete '{file_path}'. Run the script as administrator.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+delete_aesmarvel_conf()
+
 os.system('cls')
 def stop_service():
     service_name = "vgk"
