@@ -1,6 +1,0 @@
-os.system('cls')
-print("-------------------------------------------------------")
-print("System> Error has occured.")
-print("System> Press enter to exit...")
-input()
-exit()
