@@ -260,7 +260,7 @@ def check_uptime():
             print("***CHANGE LOGS (12-30-2024):")
             print("> Added a new color for Marvel Rivals Game. Safe to change settings if cheat is loaded once before running MR.")
             print("> Smoothing can't be changed. It is a feature to make the aim smooth even when raging.")
-            print("> Smooth Triggerbot and Recoil System to be added later in 2025.")
+            print("> Smooth Triggerbot and Recoil System to be added to premium later in 2025.")
             print("---Developer: Klei")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
             print(f"Time remaining: {minutes} minutes and {seconds} seconds")
