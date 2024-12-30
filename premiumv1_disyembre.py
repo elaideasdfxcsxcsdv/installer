@@ -250,7 +250,7 @@ def check_uptime():
             print("")
             print("")
             print("---To ensure the safety of premium among all computers, AES is encrypting every runtime data.")
-            print("---Please be patient, once done, you will enjoy using premium.")
+            print("---Please be patient, it will take some minutes.")
             print("---You don't need to restart PC if you want to switch account.")
             print("---You must always run the cheat first before valorant.")
             print("---The best aimb0t settings depends on your sens in Valorant.")
