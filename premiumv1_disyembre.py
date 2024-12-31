@@ -212,7 +212,7 @@ def check_uptime():
 
     if uptime >= timedelta(minutes=5):
         print("Okay")
-        if file_contentsx1=="":
+        if file_contentsx1=="uSDKdEt8VddC8":
             print("pass")
         else:
             os.system('cls')
