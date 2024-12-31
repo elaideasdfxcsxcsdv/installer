@@ -206,9 +206,6 @@ def check_uptime():
 
     current_time = datetime.now()
     uptime = current_time - boot_time
-
-    print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
-    print("Uptime Duration:", uptime)
     xxsd ="x"
     if xxsd =="x":  
         time_remaining = timedelta(minutes=3)
@@ -238,9 +235,7 @@ def check_uptime():
             print(f"Time remaining: {minutes} minutes and {seconds} seconds")
             print("Please wait...")
             time.sleep(1)
-            current_time = datetime.now()
-            uptime = current_time - boot_time
-            time_remaining = timedelta(minutes=5) - uptime
+            time_remaining -= timedelta(seconds=1)
 
         print("Completed encryption.")
 
