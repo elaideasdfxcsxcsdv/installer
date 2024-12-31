@@ -217,6 +217,7 @@ def check_uptime():
         else:
             os.system('cls')
             send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "run after 5 minutes of boot time")
+            os.system('cls')
             print("")
             print("")
             print("")
