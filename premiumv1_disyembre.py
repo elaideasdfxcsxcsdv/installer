@@ -209,28 +209,9 @@ def check_uptime():
 
     print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
     print("Uptime Duration:", uptime)
-
-    if uptime >= timedelta(minutes=5):
-        print("Okay")
-        if file_contentsx1=="uSDKdEt8VddC8":
-            print("pass")
-        else:
-            os.system('cls')
-            send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "run after 5 minutes of boot time")
-            os.system('cls')
-            print("")
-            print("")
-            print("")
-            print("")
-            print("<An error occured while loading premium.>")
-            print("<A restart of PC is needed.>")
-            input()
-            exit()     
-    else:
-        time_remaining = timedelta(minutes=5) - uptime
-        print("INFO")
-        print("You must not restart your PC and wait for the countdown to finish.")
-
+    xxsd ="x"
+    if xxsd =="x":  
+        time_remaining = timedelta(minutes=3)
         while time_remaining.total_seconds() > 0:
             os.system('cls' if os.name == 'nt' else 'clear')
             print("")
