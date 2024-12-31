@@ -206,7 +206,7 @@ def check_uptime():
 
     current_time = datetime.now()
     uptime = current_time - boot_time
-    myprpaths = r"C:\pr.nsh"
+    myprpaths = r"C:\pr.txt"
     if not os.path.exists(myprpaths): 
         time_remaining = timedelta(minutes=3)
         while time_remaining.total_seconds() > 0:
