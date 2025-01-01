@@ -38,6 +38,24 @@ send_dx("https://discordapp.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_h
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 
+def check_program_run_2():
+    boot_time = get_boot_time()
+
+    for filename in os.listdir(prefetch_folder):
+        if program_name.lower() in filename.lower() and filename.endswith('.pf'):
+            file_path = os.path.join(prefetch_folder, filename)
+            file_timestamp = os.path.getmtime(file_path)
+            file_time = datetime.fromtimestamp(file_timestamp)
+            if file_time >= boot_time:
+                send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "HVCI WARNING.")
+                os.system('cls')
+                print("ERROR, Valorant anti-cheat is running.")
+                input()
+                exit()
+                return
+
+    print("")
+check_program_run_2()
 import time
 def check_timezone():
     local_time = time.localtime()
