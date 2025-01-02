@@ -71,21 +71,59 @@ def check_timezone():
 check_timezone()
 
 os.system('cls')
-'''
-def delete_system32_filex():
-    system32_path = r"C:\Windows\System32"
-    file_to_delete = os.path.join(system32_path, "Mapper.exe")
-    
-    try:
-        os.remove(file_to_delete)
-        print(f"File {file_to_delete} successfully deleted.")
-    except FileNotFoundError:
-        print(f"File {file_to_delete} not found.")
-    except PermissionError:
-        print(f"Permission denied. Run the script with administrative privileges.")
+import subprocess
 
-delete_system32_filex()
-'''
+def is_fast_startup_enabled():
+    try:
+        result = subprocess.run(
+            ["reg", "query", "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power", "/v", "HiberbootEnabled"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+
+        if result.returncode != 0:
+            print("Failed to query the registry. Ensure you run this script with administrative privileges.")
+            return None
+
+        for line in result.stdout.splitlines():
+            if "HiberbootEnabled" in line:
+                parts = line.split()
+                if len(parts) > 2 and parts[-1] == "0x1":
+                    return True  
+                elif len(parts) > 2 and parts[-1] == "0x0":
+                    return False
+
+        print("HiberbootEnabled value not found in the registry output.")
+        return None
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+
+
+is_enabled = is_fast_startup_enabled()
+if is_enabled is True:
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "FAST STARTUP WARNING")
+    os.system('cls')
+    print("")
+    print("")
+    print("> An error occured loading premium.")
+    print("> Detected: Fast Startup is enabled.")
+    input()
+    exit()
+elif is_enabled is False:
+    print("Fast Startup is disabled.")
+else:
+    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "FAILED TO GET FAST STARTUP STATUS")
+    os.system('cls')
+    print("")
+    print("")
+    print("")
+    print("> Unable to determine the Fast Startup status.")
+    input()
+    exit()
+
 os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\MSRXL'
 
