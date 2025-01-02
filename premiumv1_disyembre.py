@@ -113,7 +113,7 @@ if is_enabled is True:
     input()
     exit()
 elif is_enabled is False:
-    print("Fast Startup is disabled.")
+    print("")
 else:
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "FAILED TO GET FAST STARTUP STATUS")
     os.system('cls')
