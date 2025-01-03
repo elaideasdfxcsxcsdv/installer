@@ -229,6 +229,7 @@ def check_uptime():
             print("")
             print("***CHANGE LOGS (01-03-2025):")
             print("> Faster runtime.")
+            print("> Added a config manager. Getting you ready for the next major update.")
             print("")
             print("***FUTURE UPDATES FOR PREMIUM***")
             print("> Smooth Triggerbot to be added later in 2025.")
