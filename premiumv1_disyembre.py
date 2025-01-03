@@ -228,6 +228,7 @@ def check_uptime():
             print("---For Windows 11 users, disable SVM in bios in order for premium to work.")
             print("")
             print("***CHANGE LOGS (01-03-2025):")
+            print("> Fixed the issue on Windows 11 where sometimes a1mbot won't work.")
             print("> Faster runtime.")
             print("> Added a config manager. Getting you ready for the next major update.")
             print("")
