@@ -225,7 +225,6 @@ def check_uptime():
             print("---To ensure 99% safety of premium cheat, it must encrypt all runtime data.")
             print("---Please be patient, it will take a few minutes.")
             print("---No need to restart PC when switching to another account.")
-            print("---To change aimb0t configs, run the application first that lets you change settings.")
             print("---For Windows 11 users, disable SVM in bios in order for premium to work.")
             print("")
             print("***CHANGE LOGS (01-03-2025):")
