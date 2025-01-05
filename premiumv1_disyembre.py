@@ -235,7 +235,6 @@ def check_uptime():
             print("")
             print("***FUTURE UPDATES FOR PREMIUM***")
             print("> Smooth Triggerbot to be added later in 2025.")
-            print("> To change config of aimb0t SAFELY while in middle of the game in Valorant. (IN TESTING)")
             print("")
             print("/////////////////////////////////////////////////////////////////////////////////////////////")
             print("<Developer: imklei>")
