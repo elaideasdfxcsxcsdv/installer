@@ -228,7 +228,7 @@ def check_uptime():
             print("---To ensure 99% safety of premium cheat, it must encrypt all runtime data.")
             print("---Please be patient, it will take a few minutes.")
             print("---No need to restart PC when switching to another account.")
-            print("---For Windows 11 users, disable SVM in bios in order for premium to work.")
+            print("---For Windows 11 users, disable core isolation in order for premium to work.")
             print("")
             print("***CHANGE LOGS (01-04-2025):")
             print("> Adjusted recoil control to 50ms-7mm pixels.")
