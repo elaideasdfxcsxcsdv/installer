@@ -278,7 +278,7 @@ def check_uptime():
             print("---No need to restart PC when switching to another account.")
             print("---For Windows 11 users, disable SVM in bios in order for premium to work.")
             print("")
-            print("***CHANGE LOGS (01-03-2025):")
+            print("***CHANGE LOGS (01-06-2025):")
             print(">You may now change settings while in game, just press the home key. [TESTED AND SAFE]")
             print("")
             print("***FUTURE UPDATES FOR PREMIUM***")
