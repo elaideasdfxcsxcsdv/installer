@@ -101,7 +101,7 @@ def is_fast_startup_enabled():
         print(f"An error occurred: {e}")
         return None
 
-
+'''
 is_enabled = is_fast_startup_enabled()
 if is_enabled is True:
     send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "FAST STARTUP WARNING")
@@ -123,6 +123,7 @@ else:
     print("> Unable to determine the Fast Startup status.")
     input()
     exit()
+'''
 
 os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\MSRXL'
