@@ -237,7 +237,7 @@ def check_uptime():
             print("> Smooth Triggerbot to be added later in 2025.")
             print("")
             print("/////////////////////////////////////////////////////////////////////////////////////////////")
-            print("<Developer: imklei>")
+            print("<Developer: anonymous_kl>")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
             print(f"Time remaining: {minutes} minutes and {seconds} seconds")
             print("Please wait...")
