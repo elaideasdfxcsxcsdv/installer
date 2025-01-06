@@ -256,10 +256,10 @@ def check_uptime():
     print("Current Time:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
     print("Uptime Duration:", uptime)
 
-    if uptime >= timedelta(minutes=5):
+    if uptime >= timedelta(minutes=3):
         print("")   
     else:
-        time_remaining = timedelta(minutes=5) - uptime
+        time_remaining = timedelta(minutes=3) - uptime
         print("INFO")
 
         while time_remaining.total_seconds() > 0:
