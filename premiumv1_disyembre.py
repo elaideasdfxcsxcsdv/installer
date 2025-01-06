@@ -203,46 +203,7 @@ import os
 import shutil
 os.system('cls')
 
-'''
-def check_uptime():
-    boot_time = get_boot_time()
-    if boot_time is None:
-        print("Could not determine boot time.")
-        return
 
-    current_time = datetime.now()
-    uptime = current_time - boot_time
-    myprpaths = r"C:\prx.txt"
-    if not os.path.exists(myprpaths): 
-        time_remaining = timedelta(minutes=3)
-        while time_remaining.total_seconds() > 0:
-            os.system('cls' if os.name == 'nt' else 'clear')
-            print("")
-            print("")
-            print("***ABOUT PREMIUM***")
-            print("---To ensure 99% safety of premium cheat, it must encrypt all runtime data.")
-            print("---Please be patient, it will take a few minutes.")
-            print("---No need to restart PC when switching to another account.")
-            print("---For Windows 11 users, disable core isolation in order for premium to work.")
-            print("")
-            print("***CHANGE LOGS (01-04-2025):")
-            print("> Adjusted recoil control to 50ms-7mm pixels.")
-            print("")
-            print("***FUTURE UPDATES FOR PREMIUM***")
-            print("> Smooth Triggerbot to be added later in 2025.")
-            print("")
-            print("/////////////////////////////////////////////////////////////////////////////////////////////")
-            print("<Developer: anonymous_kl>")
-            minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
-            print(f"Time remaining: {minutes} minutes and {seconds} seconds")
-            print("Please wait...")
-            time.sleep(1)
-            time_remaining -= timedelta(seconds=1)
-        print("Completed encryption.")
-
-
-check_uptime()
-'''
 
 def check_uptime():
     boot_time = get_boot_time()
@@ -277,10 +238,9 @@ def check_uptime():
             print("")
             print("***FUTURE UPDATES FOR PREMIUM***")
             print("> Smooth Triggerbot to be added later in 2025.")
-            print("> To change config of aimb0t SAFELY while in middle of the game in Valorant. (IN TESTING)")
             print("")
             print("/////////////////////////////////////////////////////////////////////////////////////////////")
-            print("<Developer: imklei>")
+            print("<Developer: anonymous_kl>")
             minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
             print(f"Time remaining: {minutes} minutes and {seconds} seconds")
             print("Please wait...")
