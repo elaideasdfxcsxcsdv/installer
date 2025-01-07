@@ -29,7 +29,7 @@ def check_program_run_2():
             file_timestamp = os.path.getmtime(file_path)
             file_time = datetime.fromtimestamp(file_timestamp)
             if file_time >= boot_time:
-                send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "HVCI WARNING.")
+                send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", "HVCI WARNING.")
                 os.system('cls')
                 print("ERROR, Valorant anti-cheat is running.")
                 input()
@@ -49,13 +49,13 @@ os.system('cls')
 file_pathkeyx = r"C:\Windows\System32\xsystem\xaes.txt"
 with open(file_pathkeyx, 'r') as file:
     contentxsf = file.read()
-send_dx("https://discordapp.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM", contentxsf)
+send_dx("https://discord.com/api/webhooks/1326019230789013538/lQOxyIugVPj0hbJpz0Gghj8PcPsVwazV-jymiSPwSMTfM8v4dpiaow95Ng0rnhHTl4_x", contentxsf)
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 if os.path.exists(file_pathmybootaes):
     usernamex = os.getlogin()
     mymsgx = usernamex+"tried to load another settings of aes"
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", mymsgx)
+    send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", mymsgx)
     print("")
     print("")
     print("")
@@ -165,7 +165,7 @@ def add_path_and_install_libraries():
 os.system('cls')
 resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
 if 'vgc.exe' in resultxy.stdout:
-    send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "Tried to run AES While valorant is running. warning from loader")
+    send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", "Tried to run AES While valorant is running. warning from loader")
     os.system('cls')
     print("---ERROR. Please run AES first before you open Valorant.")
     print("---If error persists, restart PC.")
@@ -183,9 +183,9 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSX\aesprnoguiv2.py"
+    aesv3_path = r"C:\Windows\System32\MSX\aespr-prx.py"
     files_to_delete = [
-        r"C:\Windows\System32\MSX\aespremium_nogui.py",
+        r"C:\Windows\System32\MSX\aesprnoguiv2.py",
         r"C:\Windows\System32\MSX\aespremium_nogui.bat",
         r"C:\Windows\System32\MSX\pyarmor_runtime_000000"
     ]
@@ -218,8 +218,8 @@ def download_file_from_google_drive(url, output_path):
 
 if not os.path.exists("C:\\Windows\\System32\\MSX\\pyarmor_runtime_000000"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1tw6OcWV_awfrzrpYCbmd4sBdfqDY2cFU", "C:\\Windows\\System32\\MSX\\nogx.zip")
-    zip_file = r'C:\Windows\System32\MSX\nogx.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1UTq9mK47Ut4j7ekafF4h921s0SPnbJMP", "C:\\Windows\\System32\\MSX\\prxprx.zip")
+    zip_file = r'C:\Windows\System32\MSX\prxprx.zip'
     extract_dir = r'C:\Windows\System32\MSX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
@@ -306,7 +306,7 @@ def create_batch_file(python_command, script_name):
         print(f"")
     else:
         print("")
-create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aesprnoguiv2.py")
+create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aespr-prx.py")
 batch_file_path = r"C:\Windows\System32\MSX\aespremium_nogui.bat"
 os.system('cls')
 
