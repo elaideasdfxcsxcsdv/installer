@@ -11,6 +11,7 @@ import sys
 import shutil
 import os
 import gdown
+import urllib.request
 os.system('cls')
 #exit()
 if file_contentsx1=="deleternn":
