@@ -235,7 +235,7 @@ def check_uptime():
             print("---To ensure 99% safety of premium cheat, it must encrypt all runtime data.")
             print("---Please be patient, it will take a few minutes.")
             print("---No need to restart PC when switching to another account.")
-            print("---For Windows 11 users, disable SVM in bios in order for premium to work.")
+            print("---For Windows 11 users, don't update to 24h2 yet.")
             print("")
             print("***CHANGE LOGS (01-06-2025):")
             print(">You may now change settings while in game, just press the home key. [TESTED AND SAFE]")
