@@ -1,7 +1,7 @@
 import platform
 import psutil
 import os
-
+os.system('cls')
 def display_system_info():
     print("System Information")
     print("=" * 40)
