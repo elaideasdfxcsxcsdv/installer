@@ -34,3 +34,5 @@ def display_system_info():
 
 
 display_system_info()
+input()
+exit()
